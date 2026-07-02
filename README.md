@@ -1,3 +1,4 @@
+<img width="921" height="921" alt="Synthesis" src="https://github.com/user-attachments/assets/2779373b-1c72-49b2-b108-7b9a1abf956e" />
 # Synthesis-Distribution
 Synthesis Apk
 Synthesis — Έξυπνη Διαχείριση Παραγωγής Ασφάλτου
