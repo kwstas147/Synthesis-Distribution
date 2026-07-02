@@ -17,7 +17,7 @@
 | Έκδοση (Architecture) | Σύνδεσμος Λήψης (Download Link) | Περιγραφή |
 | :--- | :--- | :--- |
 | 🌍 **Universal APK** | [**📥 Λήψη (Download)**](ΒΑΛΕ_ΕΔΩ_ΤΟ_LINK_ΣΟΥ) | **Προτεινόμενο.** Ένα ενιαίο αρχείο που είναι συμβατό με όλες τις Android συσκευές. |
-| 📱 **ARM64 (v8a)** | [**📥 Λήψη (Download)**](ΒΑΛΕ_ΕΔΩ_ΤΟ_LINK_ΣΟΥ) | Lightweight έκδοση, ιδανική για σύγχρονα smartphone και tablet (τελευταίας 6ετίας). |
+| 📱 **ARM64 (v8a)** | [**📥 Λήψη (Download)**](https://github.com/kwstas147/Synthesis-Distribution/releases/download/Synthesis/app-arm64-v8a-release.apk) | Lightweight έκδοση, ιδανική για σύγχρονα smartphone και tablet (τελευταίας 6ετίας). |
 
 > ⚠️ *Σημείωση: Κατά την εγκατάσταση, ίσως χρειαστεί να επιτρέψετε την "Εγκατάσταση από άγνωστες πηγές" στις ρυθμίσεις ασφαλείας της Android συσκευής σας.*
 
