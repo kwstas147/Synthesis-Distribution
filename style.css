@@ -210,29 +210,57 @@ h2 {
   color: var(--sys-text-secondary);
 }
 
-.cupertino-accordion {
-  background-color: var(--sys-card-bg);
-  border: 1px solid var(--sys-border);
-  border-radius: 12px;
-  margin-bottom: 12px;
+.legal-group {
   overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.cupertino-accordion {
+  border-bottom: 1px solid var(--sys-border);
+}
+
+.cupertino-accordion:last-child {
+  border-bottom: none;
 }
 
 .cupertino-accordion summary {
-  padding: 16px;
+  padding: 16px 20px;
   font-weight: 500;
+  font-size: 16px;
   cursor: pointer;
   outline: none;
   user-select: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none; /* Hide default arrow */
 }
 
+/* Fallback to hide default arrow in webkit */
 .cupertino-accordion summary::-webkit-details-marker {
   display: none;
 }
 
+/* Custom chevron arrow */
+.cupertino-accordion summary::after {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid var(--sys-text-secondary);
+  border-bottom: 2px solid var(--sys-text-secondary);
+  transform: rotate(-45deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+.cupertino-accordion[open] summary::after {
+  transform: rotate(45deg);
+}
+
 .accordion-content {
-  padding: 0 16px 16px;
-  font-size: 14px;
+  padding: 0 20px 20px 20px;
+  font-size: 15px;
+  line-height: 1.5;
   color: var(--sys-text-secondary);
 }
 
