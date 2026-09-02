@@ -2,6 +2,7 @@ const translations = {
   en: {
     "title": "Synthesis — Distribution",
     "subtitle": "iOS Cupertino Style • Multi-Language • Production-Ready Mobile Application",
+    "hero_desc": "Synthesis is a professional mobile application designed specifically for asphalt plants and production facilities. It fully digitizes production recording through Artificial Intelligence, extracting data from physical reports instantly. Experience a stable, premium UI with offline support and advanced statistical analysis.",
     "download_title": "📦 Download APK",
     "download_desc": "To install the application on your device, download the appropriate file from the options below.",
     "arch_arm64_title": "📱 ARM64 (v8a)",
@@ -39,6 +40,7 @@ const translations = {
   el: {
     "title": "Synthesis — Distribution",
     "subtitle": "iOS Cupertino Style • Multi-Language • Production-Ready Mobile Application",
+    "hero_desc": "Το Synthesis είναι μια επαγγελματική mobile εφαρμογή σχεδιασμένη ειδικά για ασφαλτικές μονάδες και εργοστάσια παραγωγής. Ψηφιοποιεί πλήρως την καταγραφή της παραγωγής μέσω Τεχνητής Νοημοσύνης, εξάγοντας δεδομένα από φυσικά δελτία άμεσα. Απολαύστε ένα σταθερό, premium περιβάλλον με υποστήριξη offline λειτουργίας και προηγμένη στατιστική ανάλυση.",
     "download_title": "📦 Λήψη Εφαρμογής",
     "download_desc": "Για να εγκαταστήσετε την εφαρμογή στη συσκευή σας, κατεβάστε το κατάλληλο αρχείο από τις παρακάτω επιλογές.",
     "arch_arm64_title": "📱 ARM64 (v8a)",
