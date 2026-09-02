@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Synthesis — Distribution</title>
+  <meta name="description" content="iOS Cupertino Style • Multi-Language • Production-Ready Mobile Application">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+
+  <nav class="cupertino-nav">
+    <div class="nav-content">
+      <div class="logo-area">
+        <strong>Synthesis</strong>
+      </div>
+      <div class="nav-controls">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+          <span class="icon-moon">🌙</span>
+          <span class="icon-sun" style="display:none;">☀️</span>
+        </button>
+        <button id="lang-toggle" class="text-btn">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    
+    <section class="hero glass-panel">
+      <img src="https://github.com/user-attachments/assets/2779373b-1c72-49b2-b108-7b9a1abf956e" alt="Synthesis Logo" class="hero-logo">
+      <h1 data-i18n="title">Synthesis — Distribution</h1>
+      <p class="subtitle" data-i18n="subtitle">iOS Cupertino Style • Multi-Language • Production-Ready Mobile Application</p>
+    </section>
+
+    <section class="downloads">
+      <h2 data-i18n="download_title">📦 Λήψη Εφαρμογής</h2>
+      <p class="section-desc" data-i18n="download_desc">Για να εγκαταστήσετε την εφαρμογή στη συσκευή σας, κατεβάστε το κατάλληλο αρχείο από τις παρακάτω επιλογές.</p>
+      
+      <div class="cards-grid">
+        <div class="card glass-panel">
+          <h3 data-i18n="arch_arm64_title">📱 ARM64 (v8a)</h3>
+          <p data-i18n="arch_arm64_desc">Η πιο κοινή έκδοση, συμβατή με σχεδόν όλα τα σύγχρονα smartphone και tablet (τελευταίας 6ετίας).</p>
+          <a href="https://github.com/kwstas147/Synthesis-Distribution/raw/main/app-arm64-v8a-release.apk" class="primary-btn" data-i18n="download_btn">📥 Λήψη</a>
+        </div>
+        
+        <div class="card glass-panel">
+          <h3 data-i18n="arch_arm_title">📱 ARM (v7a)</h3>
+          <p data-i18n="arch_arm_desc">Συμβατή με παλαιότερες συσκευές Android (32-bit).</p>
+          <a href="https://github.com/kwstas147/Synthesis-Distribution/raw/main/app-armeabi-v7a-release.apk" class="primary-btn" data-i18n="download_btn">📥 Λήψη</a>
+        </div>
+
+        <div class="card glass-panel">
+          <h3 data-i18n="arch_x86_title">💻 x86_64</h3>
+          <p data-i18n="arch_x86_desc">Ιδανική για Android Emulators και συσκευές/Chromebooks με επεξεργαστές x86.</p>
+          <a href="https://github.com/kwstas147/Synthesis-Distribution/raw/main/app-x86_64-release.apk" class="primary-btn" data-i18n="download_btn">📥 Λήψη</a>
+        </div>
+      </div>
+      
+      <div class="alert-box" data-i18n="warning">
+        ⚠️ Σημείωση: Κατά την εγκατάσταση, ίσως χρειαστεί να επιτρέψετε την "Εγκατάσταση από άγνωστες πηγές" στις ρυθμίσεις ασφαλείας.
+      </div>
+    </section>
+
+    <section class="features">
+      <h2 data-i18n="features_title">Κύριες Δυνατότητες</h2>
+      <div class="features-grid">
+        <div class="feature-item">
+          <h4 data-i18n="feat_1_title">📸 AI Σάρωση Αναφορών</h4>
+          <p data-i18n="feat_1_desc">Φωτογραφήστε το δελτίο παραγωγής και η εφαρμογή εξάγει αυτόματα όλα τα στοιχεία.</p>
+        </div>
+        <div class="feature-item">
+          <h4 data-i18n="feat_2_title">📋 Διαχείριση & Φιλτράρισμα</h4>
+          <p data-i18n="feat_2_desc">Πλήρες ιστορικό αναφορών με προηγμένη αναζήτηση σε scrollable πίνακες.</p>
+        </div>
+        <div class="feature-item">
+          <h4 data-i18n="feat_3_title">📊 Στατιστικά & Γραφήματα</h4>
+          <p data-i18n="feat_3_desc">Real-time ανάλυση παραγωγής, διαδραστικό ημερολόγιο και bar charts.</p>
+        </div>
+        <div class="feature-item">
+          <h4 data-i18n="feat_4_title">📤 Επαγγελματική Εξαγωγή</h4>
+          <p data-i18n="feat_4_desc">Άμεσος διαμοιρασμός σε PDF και Excel με φύλλα σύνοψης & αναλυτικών στοιχείων.</p>
+        </div>
+        <div class="feature-item">
+          <h4 data-i18n="feat_5_title">🔒 Ασφάλεια & Offline Λειτουργία</h4>
+          <p data-i18n="feat_5_desc">Τοπική αποθήκευση δεδομένων (SQLite) και βιομετρική αυθεντικοποίηση (FaceID).</p>
+        </div>
+        <div class="feature-item">
+          <h4 data-i18n="feat_6_title">🌍 Διεθνοποίηση</h4>
+          <p data-i18n="feat_6_desc">Πλήρης υποστήριξη: Ελληνικά, English, Deutsch, Français, Español, Italiano, Русский, 中文, हिन्दी.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="legal">
+      <h2 data-i18n="legal_title">⚖️ Νομικές Πληροφορίες & Πολιτικές</h2>
+      
+      <details class="cupertino-accordion">
+        <summary data-i18n="legal_1_title">1. Αποποίηση Ευθύνης</summary>
+        <p class="accordion-content" data-i18n="legal_1_desc">Η εφαρμογή παρέχεται "ως έχει". Οι χρήστες φέρουν την ευθύνη ελέγχου των αποτελεσμάτων.</p>
+      </details>
+      <details class="cupertino-accordion">
+        <summary data-i18n="legal_2_title">2. Πολιτική Απορρήτου & GDPR</summary>
+        <p class="accordion-content" data-i18n="legal_2_desc">Τα δεδομένα αποθηκεύονται τοπικά. Οι φωτογραφίες αποστέλλονται με ασφάλεια στα επίσημα AI API.</p>
+      </details>
+      <details class="cupertino-accordion">
+        <summary data-i18n="legal_3_title">3. Πολιτική Cookies</summary>
+        <p class="accordion-content" data-i18n="legal_3_desc">Αυτή η σελίδα είναι στατική και δεν χρησιμοποιεί tracking cookies.</p>
+      </details>
+      <details class="cupertino-accordion">
+        <summary data-i18n="legal_4_title">4. Πνευματικά Δικαιώματα</summary>
+        <p class="accordion-content" data-i18n="legal_4_desc">© 2024-2026. Απαγορεύεται η μη εξουσιοδοτημένη αναπαραγωγή και αποσυμπίληση.</p>
+      </details>
+    </section>
+
+  </main>
+
+  <footer>
+    <p data-i18n="footer">Developed with 💻 Clean Architecture & Production-Ready Standards.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
