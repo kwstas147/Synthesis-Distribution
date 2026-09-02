@@ -12,12 +12,13 @@
 
 ## 📦 Λήψη Εφαρμογής / Download APK
 
-Για να εγκαταστήσετε την εφαρμογή στη συσκευή σας, κατεβάστε το κατάλληλο αρχείο από τον παρακάτω πίνακα. **Προτείνεται το Universal APK** για μέγιστη συμβατότητα.
+Για να εγκαταστήσετε την εφαρμογή στη συσκευή σας, κατεβάστε το κατάλληλο αρχείο από τον παρακάτω πίνακα.
 
 | Έκδοση (Architecture) | Σύνδεσμος Λήψης (Download Link) | Περιγραφή |
 | :--- | :--- | :--- |
-| 🌍 **Universal APK** | [**📥 Λήψη (Download)**](ΒΑΛΕ_ΕΔΩ_ΤΟ_LINK_ΣΟΥ) | **Προτεινόμενο.** Ένα ενιαίο αρχείο που είναι συμβατό με όλες τις Android συσκευές. |
-| 📱 **ARM64 (v8a)** | [**📥 Λήψη (Download)**](https://github.com/kwstas147/Synthesis-Distribution/releases/download/Synthesis/app-arm64-v8a-release.apk) | Lightweight έκδοση, ιδανική για σύγχρονα smartphone και tablet (τελευταίας 6ετίας). |
+| 📱 **ARM64 (v8a)** | [**📥 Λήψη (Download)**](https://github.com/kwstas147/Synthesis-Distribution/raw/main/app-arm64-v8a-release.apk) | Η πιο κοινή έκδοση, συμβατή με σχεδόν όλα τα σύγχρονα smartphone και tablet (τελευταίας 6ετίας). |
+| 📱 **ARM (v7a)** | [**📥 Λήψη (Download)**](https://github.com/kwstas147/Synthesis-Distribution/raw/main/app-armeabi-v7a-release.apk) | Συμβατή με παλαιότερες συσκευές Android (32-bit). |
+| 💻 **x86_64** | [**📥 Λήψη (Download)**](https://github.com/kwstas147/Synthesis-Distribution/raw/main/app-x86_64-release.apk) | Ιδανική για Android Emulators και συσκευές/Chromebooks με επεξεργαστές x86. |
 
 > ⚠️ *Σημείωση: Κατά την εγκατάσταση, ίσως χρειαστεί να επιτρέψετε την "Εγκατάσταση από άγνωστες πηγές" στις ρυθμίσεις ασφαλείας της Android συσκευής σας.*
 
