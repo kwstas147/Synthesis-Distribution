@@ -141,5 +141,20 @@
   </footer>
 
   <script src="script.js"></script>
+<script>
+    // Smooth video loop transition
+    const heroVideo = document.querySelector('.hero-logo');
+    if(heroVideo && heroVideo.tagName === 'VIDEO') {
+      heroVideo.addEventListener('timeupdate', () => {
+        // If we are within 0.4 seconds of the end, fade out
+        if(heroVideo.duration && heroVideo.currentTime >= heroVideo.duration - 0.4) {
+          heroVideo.classList.add('fade-out');
+        } else if (heroVideo.currentTime < 0.5) {
+          // Fade back in at the start
+          heroVideo.classList.remove('fade-out');
+        }
+      });
+    }
+  </script>
 </body>
 </html>
