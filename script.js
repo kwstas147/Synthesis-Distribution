@@ -147,7 +147,7 @@ function updateLanguage() {
   translatableElements.forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (translations[currentLang][key]) {
-      el.textContent = translations[currentLang][key];
+      el.innerHTML = translations[currentLang][key];
     }
   });
 }

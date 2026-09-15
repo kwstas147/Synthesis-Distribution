@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Synthesis — Legal</title>
+  <meta name="description" content="Legal Information & Policies">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+
+  <nav class="cupertino-nav">
+    <div class="nav-content">
+      <div class="logo-area">
+        <strong>Synthesis</strong>
+      </div>
+      <div class="nav-controls">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+          <span class="icon-moon">🌙</span>
+          <span class="icon-sun" style="display:none;">☀️</span>
+        </button>
+        <button id="lang-toggle" class="text-btn">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="legal-page-header">
+      <a href="index.html" class="back-btn">
+        <span>‹</span> <span data-i18n="back_btn">Πίσω</span>
+      </a>
+      <h2 data-i18n="legal_4_title" style="margin: 0;"></h2>
+    </div>
+    
+    <div class="glass-panel" style="padding: 30px;">
+      <div class="legal-content" data-i18n="legal_4_full">
+        <!-- Content will be injected by JS -->
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p data-i18n="footer">Developed with 💻 Clean Architecture & Production-Ready Standards.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
