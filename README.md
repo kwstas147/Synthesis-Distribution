@@ -36,6 +36,9 @@
 * 📤 **Επαγγελματική Εξαγωγή** — Άμεσος διαμοιρασμός σε PDF (με λογότυπο, γραφήματα & πίνακες) και Excel (με φύλλα σύνοψης & αναλυτικών στοιχείων) μέσω WhatsApp, Email κλπ.
 * 🔒 **Ασφάλεια & Offline Λειτουργία** — Τοπική αποθήκευση δεδομένων (SQLite) για πλήρη λειτουργία χωρίς ίντερνετ και βιομετρική αυθεντικοποίηση (FaceID/TouchID) για κλείδωμα της εφαρμογής.
 * 🌍 **Διεθνοποίηση (9 Γλώσσες)** — Πλήρης υποστήριξη από την πρώτη γραμμή κώδικα: *Ελληνικά, English, Deutsch, Français, Español, Italiano, Русский, 中文, हिन्दी.*
+* 🛢️ **Διαχείριση Δεξαμενών** — Οπτική παρακολούθηση ποσοτήτων ασφάλτου και ιστορικό κινήσεων με δυναμικά γραφικά.
+* 🧮 **Θεωρητικοί Υπολογισμοί** — Αυτόματος υπολογισμός παραγωγικών δυνατοτήτων βάσει αποθεμάτων και εργαστηριακών συνθέσεων.
+* ⚠️ **Έλεγχος Συμμόρφωσης** — Αυτόματος εντοπισμός αποκλίσεων SPC, αρχείο ειδοποιήσεων και λεπτομερής διαγνωστική προβολή.
 
 ---
 
@@ -51,6 +54,9 @@
 * 📤 **Professional Export** — Instant sharing in PDF (featuring logo, charts & tables) and Excel (with summary & analytical sheets) via WhatsApp, Email, etc.
 * 🔒 **Security & Offline Mode** — Secure local data storage (SQLite Repository) ensuring full offline functionality and Biometric Authentication (Biometrics/App Lock) by default.
 * 🌍 **Internationalization (9 Languages)** — Built-in multi-language support: *Ελληνικά, English, Deutsch, Français, Español, Italiano, Русский, 中文, हिन्दी.*
+* 🛢️ **Tanks Management** — Visual monitoring of asphalt quantities and movement history with dynamic graphics.
+* 🧮 **Theoretical Calculations** — Automatic calculation of production capabilities based on inventory and laboratory compositions.
+* ⚠️ **Compliance Control** — Automatic detection of SPC deviations, notification log and detailed diagnostic view.
 
 ---
 
