@@ -8,7 +8,9 @@ Synthesis ("we", "our", or "us") is committed to protecting your privacy. This d
 ## 2. Data Collection and Usage
 Synthesis is designed as an offline-first industrial management application for production reporting, asphalt mixture statistics, fuel refills, and laboratory mixture tracking.
 
-- **Local Storage:** All application data, including production reports, mixture recipes, material quantities, fuel logs, and site information, are stored locally on your device using a secure SQLite database.
+- **Account & Cloud Sync:** Basic profile information (e.g., email, secure authentication tokens) is managed securely via Cloud services (Firebase). 
+- **Offline Mode:** You can opt to use the App in a strictly Offline Mode from the Settings. In Offline Mode, no data is synced, and features relying on Cloud services (like AI OCR) are disabled, keeping all operations entirely local.
+- **Local Storage:** Production reports, mixture recipes, material quantities, fuel logs, and site information are stored locally on your device using a secure SQLite database.
 - **Biometric Data:** If you enable App Lock, biometric authentication (Fingerprint or Face ID) is processed entirely on-device by your Operating System's native security APIs (`local_auth`). We do not collect, transmit, or store your biometric data.
 - **Camera and Storage Access:** The App may request access to your device camera or media storage solely for scanning documents/QR codes or exporting production reports (PDF/Excel files). Photos sent for OCR scanning are processed ephemerally and are not stored long-term on any server.
 
@@ -20,9 +22,9 @@ Synthesis is designed as an offline-first industrial management application for 
 ## 4. User Data Deletion Instructions
 Since Synthesis stores your data locally on your mobile device, you have total control over your data deletion:
 
-### A. In-App Deletion
-- **Delete Individual Records:** You can delete any production report, mixture, site, or fuel log directly within the App at any time.
-- **Clear All App Data:** You can delete 100% of stored application data at any time by going to your Android Device Settings -> Apps -> Synthesis -> Storage -> Clear Data (or Uninstalling the App). Uninstalling the application automatically and permanently deletes all local databases and cached data from your device.
+### A. In-App Deletion (Full Wipe)
+- **Account Deletion:** You have the right to permanently delete your account directly from the App's Account Settings. Performing an account deletion triggers a **Full Wipe**, which securely and irreversibly erases all your data from both your local device (SQLite databases) and our Cloud servers (Firebase).
+- **Clear App Cache/Data:** Alternatively, you can clear app data via Android Device Settings -> Apps -> Synthesis -> Storage -> Clear Data. This will delete all local data, but it will not delete your Cloud account. To completely erase your presence, please use the in-app Account Deletion feature.
 
 ### B. Request Data Deletion Assistance
 If you require assistance or have questions regarding data deletion:
