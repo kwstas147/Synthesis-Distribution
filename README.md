@@ -39,7 +39,9 @@
 * 🛢️ **Διαχείριση Δεξαμενών** — Οπτική παρακολούθηση ποσοτήτων ασφάλτου και ιστορικό κινήσεων με δυναμικά γραφικά.
 * 🧮 **Θεωρητικοί Υπολογισμοί** — Αυτόματος υπολογισμός παραγωγικών δυνατοτήτων βάσει αποθεμάτων και εργαστηριακών συνθέσεων.
 * ⚠️ **Έλεγχος Συμμόρφωσης** — Αυτόματος εντοπισμός αποκλίσεων SPC, αρχείο ειδοποιήσεων και λεπτομερής διαγνωστική προβολή.
-* 👤 **Σύγχρονος Λογαριασμός & Ιδιωτικότητα** — Διαχείριση λογαριασμού με ασφαλή σύνδεση, δυνατότητα ολικής διαγραφής δεδομένων, και επιλογή Cloud ή αυστηρά Offline λειτουργίας.
+* 👤 **Σύγχρονος Λογαριασμός & Προφίλ** — Διαχείριση λογαριασμού με ασφαλή σύνδεση, δυνατότητα αλλαγής ονόματος χρήστη (Display Name), ολική διαγραφή δεδομένων και επιλογή Cloud ή αυστηρά Offline λειτουργίας.
+* ⛽ **Δεξαμενές Καυσίμων & Κατανάλωση** — Παρακολούθηση αποθεμάτων Μαζούτ και Diesel, καταγραφή ανεφοδιασμών και δεικτών ενεργειακής απόδοσης ανά τόνο παραγωγής (l/tn).
+* ☁️ **Cloud Sync & Αυτόματο Backup** — Ασφαλής αμφίδρομος συγχρονισμός σε Firebase Firestore, προστασία ανά χρήστη με αυστηρούς κανόνες ασφαλείας και άμεση επαναφορά δεδομένων.
 
 ---
 
@@ -58,7 +60,9 @@
 * 🛢️ **Tanks Management** — Visual monitoring of asphalt quantities and movement history with dynamic graphics.
 * 🧮 **Theoretical Calculations** — Automatic calculation of production capabilities based on inventory and laboratory compositions.
 * ⚠️ **Compliance Control** — Automatic detection of SPC deviations, notification log and detailed diagnostic view.
-* 👤 **Modern Account & Privacy** — Account management with secure sign-in, full data wipe capability, and choice of Cloud or strictly Offline modes for absolute privacy.
+* 👤 **Modern Account & Profile** — Account management with secure sign-in, display name updates, full data wipe capability, and choice of Cloud or strictly Offline modes for absolute privacy.
+* ⛽ **Fuel Tanks & Consumption** — Visual tracking of Mazut & Diesel fuel levels, fuel receipts recording, and energy efficiency metrics per production ton (l/tn).
+* ☁️ **Cloud Sync & Auto-Backup** — Seamless real-time bidirectional synchronization with Firebase Firestore, strict per-user security rules, and instant cloud restore.
 
 ---
 
