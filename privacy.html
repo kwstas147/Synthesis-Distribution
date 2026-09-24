@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Synthesis — Legal</title>
-  <meta name="description" content="Legal Information & Policies">
+  <title>Synthesis — Πολιτική Απορρήτου & GDPR</title>
+  <meta name="description" content="Πολιτική Απορρήτου, GDPR, Offline Mode και ασφάλεια δεδομένων της εφαρμογής Synthesis.">
+  <link rel="canonical" href="https://kwstas147.github.io/Synthesis-Distribution/privacy.html">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,27 +14,47 @@
 </head>
 <body class="light-theme">
 
-  <nav class="cupertino-nav">
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link" data-i18n="skip_link">Μετάβαση στο περιεχόμενο</a>
+
+  <!-- Ambient Cursor Glow & Noise -->
+  <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- Aurora Mesh Background -->
+  <div class="aurora-bg" aria-hidden="true">
+    <div class="aurora-orb"></div>
+    <div class="aurora-orb"></div>
+    <div class="aurora-orb"></div>
+    <div class="aurora-orb"></div>
+  </div>
+
+  <!-- Floating Particles -->
+  <div class="particles-container" id="particles" aria-hidden="true"></div>
+
+  <nav class="cupertino-nav" aria-label="Κεντρική Πλοήγηση">
     <div class="nav-content">
       <div class="logo-area">
-        <strong>Synthesis</strong>
+        <a href="index.html" class="brand-link" style="text-decoration:none; color:inherit;">
+          <strong>Synthesis</strong>
+        </a>
       </div>
       <div class="nav-controls">
-        <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+        <button id="theme-toggle" class="icon-btn" aria-label="Εναλλαγή θέματος εμφάνισης (Σκοτεινό/Φωτεινό)">
           <span class="icon-moon">🌙</span>
           <span class="icon-sun" style="display:none;">☀️</span>
         </button>
-        <button id="lang-toggle" class="text-btn">EN</button>
+        <button id="lang-toggle" class="text-btn" aria-label="Change Language">EN</button>
       </div>
     </div>
   </nav>
 
-  <main class="container">
+  <main class="container" id="main-content">
     <div class="legal-page-header">
-      <a href="index.html" class="back-btn">
+      <a href="index.html" class="back-btn" aria-label="Επιστροφή στην αρχική σελίδα">
         <span>‹</span> <span data-i18n="back_btn">Πίσω</span>
       </a>
-      <h2 data-i18n="legal_2_title" style="margin: 0;"></h2>
+      <h1 data-i18n="legal_2_title" style="margin: 0; font-size: 24px;"></h1>
     </div>
     
     <div class="glass-panel" style="padding: 30px;">

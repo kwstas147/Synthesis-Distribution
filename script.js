@@ -1,8 +1,26 @@
+/* =====================================================
+   Synthesis — Distribution | Script (State-of-the-Art 2026)
+   Clean Architecture • Multi-Language • Interactive Engine
+   ===================================================== */
+
 const translations = {
   en: {
+    "skip_link": "Skip to main content",
     "title": "Synthesis — Distribution",
     "subtitle": "iOS Cupertino Style • Multi-Language • Production-Ready Mobile Application",
+    "hero_badge": "Synthesis v1.0.0 • Android 16 Ready & Apple iOS In Development",
     "hero_desc": "Synthesis is a professional mobile application designed specifically for asphalt plants and production facilities. It fully digitizes production recording through Artificial Intelligence, extracting data from physical reports instantly. Experience a stable, premium UI with offline support and advanced statistical analysis.",
+    "hero_cta_download": "📥 Download APK",
+    "hero_cta_simulator": "⚡ Try Live Simulator",
+    "nav_downloads": "Download",
+    "nav_simulator": "Simulator",
+    "nav_features": "Features",
+    "nav_faq": "FAQ",
+    "nav_legal": "Legal",
+    "stat_modules_lbl": "Specialized Modules",
+    "stat_langs_lbl": "Global Languages",
+    "stat_offline_lbl": "Offline-First SQLite",
+    "stat_ai_lbl": "AI OCR Speed",
     "download_title": "📦 Download APK",
     "download_desc": "To install the application on your device, download the appropriate file from the options below.",
     "arch_arm64_title": "📱 ARM64 (v8a)",
@@ -16,7 +34,17 @@ const translations = {
     "ios_badge": "🚀 In Development",
     "ios_status_btn": "⏳ Coming Soon to App Store",
     "download_btn": "📥 Download",
+    "sha_copy": "SHA-256 Checksum",
+    "sha_copied": "Copied to clipboard!",
     "warning": "⚠️ Note: During installation, you may need to allow \"Install from unknown sources\" in your Android security settings.",
+    "sim_title": "🧮 Live Asphalt Plant & Tank Simulator",
+    "sim_subtitle": "Experience Synthesis computational intelligence directly in your browser:",
+    "sim_target_label": "Asphalt Production Target:",
+    "sim_recipe_label": "Formula / Recipe Specification:",
+    "sim_bitumen_needed": "Required Bitumen",
+    "sim_aggregates_needed": "Aggregates",
+    "sim_fuel_needed": "Estimated Fuel (Mazut)",
+    "sim_time_saved": "Time Saved with AI OCR",
     "features_title": "Key Features",
     "feat_1_title": "📸 AI Report Scanning",
     "feat_1_desc": "Take a photo of the production sheet and the app automatically extracts all data.",
@@ -42,6 +70,15 @@ const translations = {
     "feat_11_desc": "Visual tracking of Mazut & Diesel fuel levels, fuel receipts recording, and energy efficiency metrics per production ton (l/tn).",
     "feat_12_title": "☁️ Cloud Sync & Auto-Backup",
     "feat_12_desc": "Seamless real-time bidirectional synchronization with Firebase Firestore, strict per-user security rules, and instant cloud restore.",
+    "faq_title": "💬 Frequently Asked Questions (FAQ)",
+    "faq_1_q": "How do I install the APK file on Android?",
+    "faq_1_a": "After downloading the APK for your device architecture (usually ARM64), tap to open the file. If prompted, enable installation from unknown sources in Android Security Settings. Synthesis is 100% optimized for Android 8.0 through Android 16.",
+    "faq_2_q": "Does the application operate without internet access (Offline)?",
+    "faq_2_a": "Yes, absolutely. Synthesis operates on a strict Offline-First architecture. All reports, materials, formulas, and history are kept locally in an encrypted SQLite database. Cloud sync and AI OCR are strictly optional.",
+    "faq_3_q": "When will the Apple iOS (iPhone & iPad) edition launch?",
+    "faq_3_a": "The iOS edition is currently in active development using 100% native Cupertino widgets, Face ID, and Apple Silicon tuning. It will launch on Apple TestFlight and the App Store shortly.",
+    "faq_4_q": "How is the privacy of AI photos and company data protected?",
+    "faq_4_a": "The app follows a Bring-Your-Own-Key (BYOK) privacy model. Scanned production sheets are transmitted via encrypted HTTPS/TLS directly to the chosen AI provider API and never retained on third-party servers. 100% Offline Mode and Full Wipe are also supported.",
     "legal_title": "⚖️ Legal & Policies",
     "legal_1_title": "1. Disclaimer of Liability",
     "legal_1_desc": "The application is provided \"as is\" without warranty. Users are responsible for verifying data.",
@@ -59,9 +96,22 @@ const translations = {
     "footer": "Developed with 💻 Clean Architecture & Production-Ready Standards."
   },
   el: {
+    "skip_link": "Μετάβαση στο περιεχόμενο",
     "title": "Synthesis — Distribution",
     "subtitle": "iOS Cupertino Style • Multi-Language • Production-Ready Mobile Application",
+    "hero_badge": "Synthesis v1.0.0 • Android 16 Ready & Apple iOS In Development",
     "hero_desc": "Το Synthesis είναι μια επαγγελματική mobile εφαρμογή σχεδιασμένη ειδικά για ασφαλτικές μονάδες και εργοστάσια παραγωγής. Ψηφιοποιεί πλήρως την καταγραφή της παραγωγής μέσω Τεχνητής Νοημοσύνης, εξάγοντας δεδομένα από φυσικά δελτία άμεσα. Απολαύστε ένα σταθερό, premium περιβάλλον με υποστήριξη offline λειτουργίας και προηγμένη στατιστική ανάλυση.",
+    "hero_cta_download": "📥 Λήψη Εφαρμογής",
+    "hero_cta_simulator": "⚡ Δοκιμή Simulator",
+    "nav_downloads": "Λήψη",
+    "nav_simulator": "Προσομοιωτής",
+    "nav_features": "Δυνατότητες",
+    "nav_faq": "FAQ",
+    "nav_legal": "Νομικά",
+    "stat_modules_lbl": "Εξειδικευμένα Modules",
+    "stat_langs_lbl": "Παγκόσμιες Γλώσσες",
+    "stat_offline_lbl": "Offline-First SQLite",
+    "stat_ai_lbl": "Ταχύτητα AI OCR",
     "download_title": "📦 Λήψη Εφαρμογής",
     "download_desc": "Για να εγκαταστήσετε την εφαρμογή στη συσκευή σας, κατεβάστε το κατάλληλο αρχείο από τις παρακάτω επιλογές.",
     "arch_arm64_title": "📱 ARM64 (v8a)",
@@ -75,7 +125,17 @@ const translations = {
     "ios_badge": "🚀 Σε Εξέλιξη",
     "ios_status_btn": "⏳ Σύντομα στο App Store",
     "download_btn": "📥 Λήψη",
+    "sha_copy": "SHA-256 Checksum",
+    "sha_copied": "Αντιγράφηκε στο πρόχειρο!",
     "warning": "⚠️ Σημείωση: Κατά την εγκατάσταση, ίσως χρειαστεί να επιτρέψετε την \"Εγκατάσταση από άγνωστες πηγές\" στις ρυθμίσεις ασφαλείας.",
+    "sim_title": "🧮 Live Προσομοιωτής Παραγωγής & Δεξαμενών",
+    "sim_subtitle": "Δοκιμάστε τη λογική των υπολογισμών του Synthesis σε πραγματικό χρόνο:",
+    "sim_target_label": "Στόχος Παραγωγής Ασφαλτομίγματος:",
+    "sim_recipe_label": "Επιλογή Συνταγής / Προδιαγραφής:",
+    "sim_bitumen_needed": "Απαιτούμενη Άσφαλτος",
+    "sim_aggregates_needed": "Αδρανή Υλικά",
+    "sim_fuel_needed": "Εκτιμώμενο Καύσιμο (Μαζούτ)",
+    "sim_time_saved": "Εξοικονόμηση Χρόνου με AI",
     "features_title": "Κύριες Δυνατότητες",
     "feat_1_title": "📸 AI Σάρωση Αναφορών",
     "feat_1_desc": "Φωτογραφήστε το δελτίο παραγωγής και η εφαρμογή εξάγει αυτόματα όλα τα στοιχεία.",
@@ -101,6 +161,15 @@ const translations = {
     "feat_11_desc": "Παρακολούθηση αποθεμάτων Μαζούτ και Diesel, καταγραφή ανεφοδιασμών και δεικτών ενεργειακής απόδοσης ανά τόνο (l/tn).",
     "feat_12_title": "☁️ Cloud Sync & Αυτόματο Backup",
     "feat_12_desc": "Ασφαλής αμφίδρομος συγχρονισμός σε Firebase Firestore, προστασία ανά χρήστη με αυστηρούς κανόνες ασφαλείας και άμεση επαναφορά δεδομένων.",
+    "faq_title": "💬 Συχνές Ερωτήσεις (FAQ)",
+    "faq_1_q": "Πώς μπορώ να εγκαταστήσω το αρχείο APK στο Android;",
+    "faq_1_a": "Αφού κατεβάσετε το APK για την αρχιτεκτονική της συσκευής σας (συνήθως ARM64), ανοίξτε το αρχείο. Εάν σας ζητηθεί, επιτρέψτε την εγκατάσταση από αυτήν την πηγή στις ρυθμίσεις ασφαλείας του Android. Η εφαρμογή είναι πλήρως συμβατή με Android 8.0 έως Android 16.",
+    "faq_2_q": "Λειτουργεί η εφαρμογή χωρίς σύνδεση στο διαδίκτυο (Offline);",
+    "faq_2_a": "Απολύτως. Το Synthesis είναι κατασκευασμένο με αρχιτεκτονική Offline-First. Όλα τα δεδομένα, δελτία, δεξαμενές και στατιστικά αποθηκεύονται τοπικά σε κρυπτογραφημένη βάση SQLite. Η μόνη προαιρετική λειτουργία που απαιτεί διαδίκτυο είναι η σάρωση δελτίων μέσω AI OCR (αν επιθυμείτε) και ο προαιρετικός συγχρονισμός Cloud.",
+    "faq_3_q": "Πότε θα κυκλοφορήσει η έκδοση για iPhone & iPad (Apple iOS);",
+    "faq_3_a": "Η έκδοση για iOS αναπτύσσεται ενεργά με 100% native Cupertino στοιχεία, Face ID, και Apple Silicon βελτιστοποίηση. Θα διατεθεί σύντομα μέσω Apple TestFlight και του επίσημου App Store.",
+    "faq_4_q": "Πώς διασφαλίζεται η ασφάλεια των δεδομένων και των φωτογραφιών AI;",
+    "faq_4_a": "Η εφαρμογή ακολουθεί το μοντέλο Bring-Your-Own-Key (BYOK). Οι φωτογραφίες των δελτίων μεταδίδονται κρυπτογραφημένα (HTTPS/TLS) αποκλειστικά στο επίσημο API του παρόχου AI που επιλέγετε και δεν αποθηκεύονται σε εξωτερικούς servers. Επιπλέον, υποστηρίζεται λειτουργία 100% Offline Mode και δυνατότητα Full Wipe.",
     "legal_title": "⚖️ Νομικές Πληροφορίες & Πολιτικές",
     "legal_1_title": "1. Αποποίηση Ευθύνης",
     "legal_1_desc": "Η εφαρμογή παρέχεται \"ως έχει\". Οι χρήστες φέρουν την ευθύνη ελέγχου των αποτελεσμάτων.",
@@ -122,60 +191,441 @@ const translations = {
 let currentLang = localStorage.getItem('lang') || 'el';
 let isDarkMode = localStorage.getItem('theme') === 'dark';
 
-// Elements
+/* — DOM Elements — */
 const themeToggle = document.getElementById('theme-toggle');
 const iconMoon = document.querySelector('.icon-moon');
 const iconSun = document.querySelector('.icon-sun');
 const langToggle = document.getElementById('lang-toggle');
 const translatableElements = document.querySelectorAll('[data-i18n]');
 
-// Initialize
-function init() {
-  // Theme
-  if (isDarkMode) {
-    document.body.classList.replace('light-theme', 'dark-theme');
-    iconMoon.style.display = 'none';
-    iconSun.style.display = 'inline';
+/* =====================================================
+   Interactive Spotlight / Cursor Glow
+   ===================================================== */
+function initCursorGlow() {
+  const glow = document.getElementById('cursor-glow');
+  if (!glow) return;
+  if (window.matchMedia('(hover: none)').matches) return;
+
+  let mouseX = -500;
+  let mouseY = -500;
+  let currentX = -500;
+  let currentY = -500;
+
+  window.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    glow.style.opacity = '1';
+  });
+
+  document.addEventListener('mouseleave', () => {
+    glow.style.opacity = '0';
+  });
+
+  function animateGlow() {
+    currentX += (mouseX - currentX) * 0.12;
+    currentY += (mouseY - currentY) * 0.12;
+    glow.style.transform = `translate3d(${currentX}px, ${currentY}px, 0)`;
+    requestAnimationFrame(animateGlow);
   }
-  
-  // Language
-  updateLanguage();
+  requestAnimationFrame(animateGlow);
 }
 
-// Theme Toggle
-themeToggle.addEventListener('click', () => {
-  isDarkMode = !isDarkMode;
-  if (isDarkMode) {
-    document.body.classList.replace('light-theme', 'dark-theme');
-    iconMoon.style.display = 'none';
-    iconSun.style.display = 'inline';
-    localStorage.setItem('theme', 'dark');
-  } else {
-    document.body.classList.replace('dark-theme', 'light-theme');
-    iconMoon.style.display = 'inline';
-    iconSun.style.display = 'none';
-    localStorage.setItem('theme', 'light');
+/* =====================================================
+   Floating Particles System
+   ===================================================== */
+function createParticles() {
+  const container = document.getElementById('particles');
+  if (!container) return;
+
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prefersReducedMotion) return;
+
+  const particleCount = window.innerWidth < 600 ? 15 : 30;
+  
+  for (let i = 0; i < particleCount; i++) {
+    const particle = document.createElement('div');
+    particle.classList.add('particle');
+    
+    const size = Math.random() * 3 + 1.5;
+    const left = Math.random() * 100;
+    const duration = Math.random() * 10 + 8;
+    const delay = Math.random() * 15;
+    const opacity = Math.random() * 0.35 + 0.1;
+    
+    particle.style.cssText = `
+      width: ${size}px;
+      height: ${size}px;
+      left: ${left}%;
+      animation-duration: ${duration}s;
+      animation-delay: ${delay}s;
+      opacity: ${opacity};
+    `;
+    
+    container.appendChild(particle);
   }
-});
+}
 
-// Language Toggle
-langToggle.addEventListener('click', () => {
-  currentLang = currentLang === 'el' ? 'en' : 'el';
-  localStorage.setItem('lang', currentLang);
-  updateLanguage();
-});
+/* =====================================================
+   IntersectionObserver — Scroll Reveal Animations
+   ===================================================== */
+function initScrollReveal() {
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prefersReducedMotion) {
+    document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => {
+      el.classList.add('visible');
+    });
+    return;
+  }
 
-// Update Language UI
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px 0px -40px 0px',
+    threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  document.querySelectorAll('.reveal-stagger').forEach(el => observer.observe(el));
+}
+
+/* =====================================================
+   Number Counting Animation (Rule 7: Tween Counting)
+   ===================================================== */
+function initStatsCounters() {
+  const statNumbers = document.querySelectorAll('.stat-number');
+  if (!statNumbers.length) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateNumbers();
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.2 });
+
+  const statsRibbon = document.querySelector('.stats-ribbon');
+  if (statsRibbon) {
+    observer.observe(statsRibbon);
+  }
+
+  function animateNumbers() {
+    statNumbers.forEach(el => {
+      const target = parseInt(el.getAttribute('data-target'), 10);
+      const prefix = el.getAttribute('data-prefix') || '';
+      const suffix = el.getAttribute('data-suffix') || '';
+      
+      if (isNaN(target)) return;
+
+      const duration = 1500;
+      const startTime = performance.now();
+
+      function updateCounter(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        /* Ease out cubic */
+        const ease = 1 - Math.pow(1 - progress, 3);
+        const currentVal = Math.round(target * ease);
+
+        if (suffix === 's' || prefix === '< ') {
+          el.textContent = `${prefix}${currentVal}${suffix}`;
+        } else if (target === 100) {
+          el.textContent = `${currentVal}%`;
+        } else {
+          el.textContent = `${currentVal}+`;
+        }
+
+        if (progress < 1) {
+          requestAnimationFrame(updateCounter);
+        }
+      }
+
+      requestAnimationFrame(updateCounter);
+    });
+  }
+}
+
+/* =====================================================
+   Smooth Card Tilt Effect (Mouse Parallax)
+   ===================================================== */
+function initCardTilt() {
+  if (window.matchMedia('(hover: none)').matches) return;
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prefersReducedMotion) return;
+
+  const cards = document.querySelectorAll('.card.glass-panel, .feature-item');
+  
+  cards.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      
+      const rotateX = ((y - centerY) / centerY) * -3;
+      const rotateY = ((x - centerX) / centerX) * 3;
+      
+      card.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+    });
+    
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg) translateY(0)';
+    });
+  });
+}
+
+/* =====================================================
+   Live Asphalt Plant Simulator Engine
+   ===================================================== */
+function initPlantSimulator() {
+  const rangeInput = document.getElementById('sim-range');
+  if (!rangeInput) return;
+
+  const targetValDisplay = document.getElementById('sim-target-val');
+  const metricBitumen = document.getElementById('metric-bitumen');
+  const metricAggregates = document.getElementById('metric-aggregates');
+  const metricFuel = document.getElementById('metric-fuel');
+  const metricTime = document.getElementById('metric-time');
+  const tankFluid = document.getElementById('tank-fluid');
+  const tankBadge = document.getElementById('tank-badge-text');
+  const segmentBtns = document.querySelectorAll('.segment-btn');
+
+  let currentBitumenPct = 0.052;
+  let currentFuelPerTn = 6.2;
+
+  function calculate() {
+    const tons = parseInt(rangeInput.value, 10);
+    targetValDisplay.textContent = `${tons} tn`;
+
+    const bitumenTons = tons * currentBitumenPct;
+    const aggregatesTons = tons - bitumenTons;
+    const fuelLiters = Math.round(tons * currentFuelPerTn);
+    const timeSavedHours = (tons * 0.01).toFixed(1);
+
+    metricBitumen.textContent = `${bitumenTons.toFixed(1)} tn`;
+    metricAggregates.textContent = `${aggregatesTons.toFixed(1)} tn`;
+    metricFuel.textContent = `${fuelLiters.toLocaleString()} Lt`;
+    metricTime.textContent = currentLang === 'el' ? `~${timeSavedHours} ώρες` : `~${timeSavedHours} hrs`;
+
+    /* Dynamic Tank visual level */
+    const tankCapacity = 40; // 40 ton max capacity reference
+    const tankPercent = Math.min(95, Math.max(20, Math.round((bitumenTons / tankCapacity) * 100)));
+    tankFluid.style.height = `${tankPercent}%`;
+    tankBadge.textContent = currentLang === 'el'
+      ? `Στάθμη: ${tankPercent}% • 165°C`
+      : `Level: ${tankPercent}% • 165°C`;
+  }
+
+  rangeInput.addEventListener('input', calculate);
+
+  segmentBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      segmentBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentBitumenPct = parseFloat(btn.getAttribute('data-bitumen'));
+      currentFuelPerTn = parseFloat(btn.getAttribute('data-fuel'));
+      calculate();
+    });
+  });
+
+  calculate();
+}
+
+/* =====================================================
+   Cupertino FAQ Accordion
+   ===================================================== */
+function initFAQ() {
+  const faqItems = document.querySelectorAll('.faq-item');
+  if (!faqItems.length) return;
+
+  faqItems.forEach(item => {
+    const btn = item.querySelector('.faq-question');
+    if (!btn) return;
+
+    btn.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+
+      /* Close other open items */
+      faqItems.forEach(other => {
+        if (other !== item) {
+          other.classList.remove('open');
+          const otherBtn = other.querySelector('.faq-question');
+          if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      /* Toggle current */
+      item.classList.toggle('open', !isOpen);
+      btn.setAttribute('aria-expanded', !isOpen ? 'true' : 'false');
+    });
+  });
+}
+
+/* =====================================================
+   SHA-256 Checksum Copier
+   ===================================================== */
+function initChecksumCopier() {
+  const buttons = document.querySelectorAll('.checksum-btn');
+  if (!buttons.length) return;
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const checksum = btn.getAttribute('data-checksum');
+      if (navigator.clipboard && checksum) {
+        navigator.clipboard.writeText(checksum).then(() => {
+          const originalText = btn.textContent;
+          btn.textContent = translations[currentLang]["sha_copied"];
+          btn.style.color = '#34C759';
+          setTimeout(() => {
+            btn.textContent = originalText;
+            btn.style.color = '';
+          }, 2000);
+        });
+      }
+    });
+  });
+}
+
+/* =====================================================
+   Nav Scroll Blur Intensity
+   ===================================================== */
+function initNavScrollEffect() {
+  const nav = document.querySelector('.cupertino-nav');
+  if (!nav) return;
+  
+  let ticking = false;
+  
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        const scrollY = window.scrollY;
+        const opacity = Math.min(0.95, 0.72 + scrollY * 0.001);
+        const borderOpacity = Math.min(0.3, 0.12 + scrollY * 0.0005);
+        
+        if (isDarkMode) {
+          nav.style.backgroundColor = `rgba(22, 22, 24, ${opacity})`;
+        } else {
+          nav.style.backgroundColor = `rgba(255, 255, 255, ${opacity})`;
+        }
+        nav.style.borderBottomColor = isDarkMode
+          ? `rgba(84, 84, 88, ${borderOpacity + 0.2})`
+          : `rgba(60, 60, 67, ${borderOpacity})`;
+        
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+}
+
+/* =====================================================
+   Theme Toggle
+   ===================================================== */
+if (themeToggle) {
+  themeToggle.addEventListener('click', () => {
+    isDarkMode = !isDarkMode;
+
+    document.body.style.transition = 'background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1), color 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
+    
+    if (isDarkMode) {
+      document.body.classList.replace('light-theme', 'dark-theme');
+      if (iconMoon) iconMoon.style.display = 'none';
+      if (iconSun) iconSun.style.display = 'inline';
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.body.classList.replace('dark-theme', 'light-theme');
+      if (iconMoon) iconMoon.style.display = 'inline';
+      if (iconSun) iconSun.style.display = 'none';
+      localStorage.setItem('theme', 'light');
+    }
+
+    const nav = document.querySelector('.cupertino-nav');
+    if (nav) {
+      nav.style.backgroundColor = '';
+      nav.style.borderBottomColor = '';
+    }
+  });
+}
+
+/* =====================================================
+   Language Toggle
+   ===================================================== */
+if (langToggle) {
+  langToggle.addEventListener('click', () => {
+    currentLang = currentLang === 'el' ? 'en' : 'el';
+    localStorage.setItem('lang', currentLang);
+    updateLanguage();
+  });
+}
+
 function updateLanguage() {
-  langToggle.textContent = currentLang === 'el' ? 'EN' : 'GR';
+  if (langToggle) langToggle.textContent = currentLang === 'el' ? 'EN' : 'GR';
   document.documentElement.lang = currentLang;
   
   translatableElements.forEach(el => {
     const key = el.getAttribute('data-i18n');
-    if (translations[currentLang][key]) {
+    if (translations[currentLang] && translations[currentLang][key]) {
       el.innerHTML = translations[currentLang][key];
     }
   });
+
+  /* Recalculate simulator if present */
+  const rangeInput = document.getElementById('sim-range');
+  if (rangeInput) {
+    const evt = new Event('input');
+    rangeInput.dispatchEvent(evt);
+  }
+}
+
+/* =====================================================
+   Initialization
+   ===================================================== */
+function init() {
+  /* Theme initialization */
+  if (isDarkMode) {
+    document.body.classList.replace('light-theme', 'dark-theme');
+    if (iconMoon) iconMoon.style.display = 'none';
+    if (iconSun) iconSun.style.display = 'inline';
+  }
+  
+  /* Language initialization */
+  updateLanguage();
+
+  /* Spotlight Glow */
+  initCursorGlow();
+  
+  /* Particles */
+  createParticles();
+  
+  /* Scroll Reveal */
+  initScrollReveal();
+
+  /* Number Counting on Stats */
+  initStatsCounters();
+  
+  /* Card Tilt (mouse parallax) */
+  initCardTilt();
+
+  /* Plant Simulator Widget */
+  initPlantSimulator();
+
+  /* FAQ Accordion */
+  initFAQ();
+
+  /* Checksum Copier */
+  initChecksumCopier();
+  
+  /* Nav Scroll Blur */
+  initNavScrollEffect();
 }
 
 init();

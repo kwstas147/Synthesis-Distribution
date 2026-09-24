@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kwstas147.github.io/Synthesis-Distribution/sitemap.xml

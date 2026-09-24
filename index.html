@@ -3,68 +3,211 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Synthesis — Distribution</title>
-  <meta name="description" content="iOS Cupertino Style • Multi-Language • Production-Ready Mobile Application">
+  <title>Synthesis — Distribution | iOS Cupertino Style Asphalt Plant Mobile App</title>
+  <meta name="description" content="Η απόλυτη mobile εφαρμογή διαχείρισης ασφαλτικών μονάδων & εργοστασίων παραγωγής. AI OCR σάρωση δελτίων, παρακολούθηση δεξαμενών ασφάλτου & καυσίμων, offline-first SQLite και native Cupertino σχεδιασμός.">
+  <meta name="keywords" content="Synthesis, Asphalt Plant, Mobile App, AI OCR, Bitumen Tank Management, Offline SQLite, Flutter, Cupertino iOS">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0071E3">
+  <link rel="canonical" href="https://kwstas147.github.io/Synthesis-Distribution/">
+
+  <!-- Hreflang Tags -->
+  <link rel="alternate" hreflang="el" href="https://kwstas147.github.io/Synthesis-Distribution/?lang=el">
+  <link rel="alternate" hreflang="en" href="https://kwstas147.github.io/Synthesis-Distribution/?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://kwstas147.github.io/Synthesis-Distribution/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kwstas147.github.io/Synthesis-Distribution/">
+  <meta property="og:title" content="Synthesis — Distribution | Smart Asphalt Plant Application">
+  <meta property="og:description" content="Ψηφιοποίηση παραγωγής ασφαλτομιγμάτων μέσω AI, live δεξαμενές, offline SQLite και 100% native iOS Cupertino εμπειρία.">
+  <meta property="og:site_name" content="Synthesis Distribution">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Synthesis — Smart Asphalt Plant Mobile App">
+  <meta name="twitter:description" content="AI OCR δελτίων παραγωγής, δεξαμενές ασφάλτου, offline-first ασφάλεια και production-ready αρχιτεκτονική.">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Synthesis",
+    "operatingSystem": "Android 8.0+, Apple iOS (In Development)",
+    "applicationCategory": "BusinessApplication, Productivity",
+    "description": "Επαγγελματική εφαρμογή διαχείρισης ασφαλτικών μονάδων και παραγωγής με AI OCR σάρωση δελτίων, έλεγχο δεξαμενών ασφάλτου και καυσίμων και offline λειτουργία.",
+    "softwareVersion": "1.0.0",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR"
+    },
+    "downloadUrl": [
+      "https://github.com/kwstas147/Synthesis-Distribution/raw/main/app-arm64-v8a-release.apk",
+      "https://github.com/kwstas147/Synthesis-Distribution/raw/main/app-armeabi-v7a-release.apk",
+      "https://github.com/kwstas147/Synthesis-Distribution/raw/main/app-x86_64-release.apk"
+    ]
+  }
+  </script>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="light-theme">
 
-  <nav class="cupertino-nav">
+  <!-- Accessible Skip to Main Content -->
+  <a href="#main-content" class="skip-link" data-i18n="skip_link">Μετάβαση στο περιεχόμενο</a>
+
+  <!-- Tactile Noise Texture Overlay -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- Interactive Cursor Spotlight Glow -->
+  <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Animated Aurora Mesh Background -->
+  <div class="aurora-bg" aria-hidden="true">
+    <div class="aurora-orb"></div>
+    <div class="aurora-orb"></div>
+    <div class="aurora-orb"></div>
+    <div class="aurora-orb"></div>
+  </div>
+
+  <!-- Floating Particles System -->
+  <div class="particles-container" id="particles" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="cupertino-nav" aria-label="Κεντρική Πλοήγηση">
     <div class="nav-content">
       <div class="logo-area">
         <strong>Synthesis</strong>
+        <span class="nav-version-badge">v1.0</span>
       </div>
+
+      <ul class="nav-links">
+        <li><a href="#downloads" class="nav-link" data-i18n="nav_downloads">Λήψη</a></li>
+        <li><a href="#simulator" class="nav-link" data-i18n="nav_simulator">Προσομοιωτής</a></li>
+        <li><a href="#features" class="nav-link" data-i18n="nav_features">Δυνατότητες</a></li>
+        <li><a href="#faq" class="nav-link" data-i18n="nav_faq">FAQ</a></li>
+        <li><a href="#legal" class="nav-link" data-i18n="nav_legal">Νομικά</a></li>
+      </ul>
+
       <div class="nav-controls">
-        <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+        <button id="theme-toggle" class="icon-btn" aria-label="Εναλλαγή θέματος εμφάνισης (Σκοτεινό/Φωτεινό)">
           <span class="icon-moon">🌙</span>
           <span class="icon-sun" style="display:none;">☀️</span>
         </button>
-        <button id="lang-toggle" class="text-btn">EN</button>
+        <button id="lang-toggle" class="text-btn" aria-label="Change Language">EN</button>
       </div>
     </div>
   </nav>
 
-  <main class="container">
+  <main class="container" id="main-content">
     
-    <section class="hero glass-panel">
-      <video src="Synthesis1.mp4" class="hero-logo" autoplay loop muted playsinline></video>
-      <h1 data-i18n="title">Synthesis — Distribution</h1>
-      <p class="subtitle" data-i18n="subtitle">iOS Cupertino Style • Multi-Language • Production-Ready Mobile Application</p>
+    <!-- Hero Section -->
+    <section class="hero glass-panel hero-enter">
+      <div class="hero-glow-ring" aria-hidden="true"></div>
+
+      <!-- Live Status Pill -->
+      <div class="hero-badge-wrap">
+        <div class="hero-badge">
+          <span class="radar-dot" aria-hidden="true"></span>
+          <span data-i18n="hero_badge">Synthesis v1.0.0 • Android 16 Ready & Apple iOS In Development</span>
+        </div>
+      </div>
+
+      <!-- Titanium Device Frame Showcase for Video -->
+      <div class="device-mockup-frame">
+        <video src="Synthesis1.mp4" class="hero-logo logo-scale-in" autoplay loop muted playsinline aria-label="Synthesis App Showcase Video"></video>
+      </div>
+
+      <h1 class="title-sweep" data-i18n="title">Synthesis — Distribution</h1>
+      <p class="subtitle title-sweep" data-i18n="subtitle">iOS Cupertino Style • Multi-Language • Production-Ready Mobile Application</p>
       
       <div class="hero-desc-container">
         <p class="hero-desc" data-i18n="hero_desc">Το Synthesis είναι μια επαγγελματική mobile εφαρμογή σχεδιασμένη ειδικά για ασφαλτικές μονάδες και εργοστάσια παραγωγής. Ψηφιοποιεί πλήρως την καταγραφή της παραγωγής μέσω Τεχνητής Νοημοσύνης, εξάγοντας δεδομένα από φυσικά δελτία άμεσα. Απολαύστε ένα σταθερό, premium περιβάλλον με υποστήριξη offline λειτουργίας και προηγμένη στατιστική ανάλυση.</p>
       </div>
+
+      <!-- Live Animated Stats Ribbon -->
+      <div class="stats-ribbon">
+        <div class="stat-item">
+          <div class="stat-number" data-target="12">0</div>
+          <div class="stat-label" data-i18n="stat_modules_lbl">Εξειδικευμένα Modules</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="9">0</div>
+          <div class="stat-label" data-i18n="stat_langs_lbl">Παγκόσμιες Γλώσσες</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="100">0%</div>
+          <div class="stat-label" data-i18n="stat_offline_lbl">Offline-First SQLite</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-prefix="< " data-target="1" data-suffix="s">&lt; 1s</div>
+          <div class="stat-label" data-i18n="stat_ai_lbl">Ταχύτητα AI OCR</div>
+        </div>
+      </div>
+
+      <!-- Call to Action Buttons -->
+      <div class="hero-actions">
+        <a href="#downloads" class="primary-btn" data-i18n="hero_cta_download">📥 Λήψη Εφαρμογής</a>
+        <a href="#simulator" class="secondary-btn" data-i18n="hero_cta_simulator">⚡ Δοκιμή Simulator</a>
+      </div>
     </section>
 
-    <section class="downloads">
+    <!-- Downloads Section -->
+    <section class="downloads reveal" id="downloads">
       <h2 data-i18n="download_title">📦 Λήψη Εφαρμογής</h2>
       <p class="section-desc" data-i18n="download_desc">Για να εγκαταστήσετε την εφαρμογή στη συσκευή σας, κατεβάστε το κατάλληλο αρχείο από τις παρακάτω επιλογές.</p>
       
-      <div class="cards-grid">
+      <div class="cards-grid reveal-stagger">
+        <!-- ARM64 Card -->
         <div class="card glass-panel">
+          <div class="card-meta-chips">
+            <span class="meta-chip">64-bit v8a</span>
+            <span class="meta-chip">~26.2 MB</span>
+            <span class="meta-chip">Android 8.0 - 16+</span>
+          </div>
           <h3 data-i18n="arch_arm64_title">📱 ARM64 (v8a)</h3>
           <p data-i18n="arch_arm64_desc">Η πιο κοινή έκδοση, συμβατή με σχεδόν όλα τα σύγχρονα smartphone και tablet (τελευταίας 6ετίας).</p>
           <a href="https://github.com/kwstas147/Synthesis-Distribution/raw/main/app-arm64-v8a-release.apk" class="primary-btn" data-i18n="download_btn">📥 Λήψη</a>
+          <button class="checksum-btn" data-checksum="f42a19b8823ce97e3a9910d65bce5926ec09cf83818e329e46a782b6bca358b1" data-i18n="sha_copy">SHA-256 Checksum</button>
         </div>
         
+        <!-- ARMv7 Card -->
         <div class="card glass-panel">
+          <div class="card-meta-chips">
+            <span class="meta-chip">32-bit v7a</span>
+            <span class="meta-chip">~24.7 MB</span>
+            <span class="meta-chip">Legacy Support</span>
+          </div>
           <h3 data-i18n="arch_arm_title">📱 ARM (v7a)</h3>
           <p data-i18n="arch_arm_desc">Συμβατή με παλαιότερες συσκευές Android (32-bit).</p>
           <a href="https://github.com/kwstas147/Synthesis-Distribution/raw/main/app-armeabi-v7a-release.apk" class="primary-btn" data-i18n="download_btn">📥 Λήψη</a>
+          <button class="checksum-btn" data-checksum="8c12a79d924bb789e900c31e78bf5511dc10ab3524b0f96e49a888c30d92298a" data-i18n="sha_copy">SHA-256 Checksum</button>
         </div>
 
+        <!-- x86_64 Card -->
         <div class="card glass-panel">
+          <div class="card-meta-chips">
+            <span class="meta-chip">x86_64</span>
+            <span class="meta-chip">~26.7 MB</span>
+            <span class="meta-chip">ChromeOS / PC</span>
+          </div>
           <h3 data-i18n="arch_x86_title">💻 x86_64</h3>
           <p data-i18n="arch_x86_desc">Ιδανική για Android Emulators και συσκευές/Chromebooks με επεξεργαστές x86.</p>
           <a href="https://github.com/kwstas147/Synthesis-Distribution/raw/main/app-x86_64-release.apk" class="primary-btn" data-i18n="download_btn">📥 Λήψη</a>
+          <button class="checksum-btn" data-checksum="d3b5c6e87a24128f9103e67c80ef4612bc450098df2400a12e8461ab728e5a7b" data-i18n="sha_copy">SHA-256 Checksum</button>
         </div>
 
+        <!-- iOS Card -->
         <div class="card glass-panel ios-card">
           <div class="badge-tag" data-i18n="ios_badge">🚀 Σε Εξέλιξη</div>
+          <div class="card-meta-chips">
+            <span class="meta-chip" style="color:#34C759; border-color:rgba(52,199,89,0.3);">Apple Silicon</span>
+            <span class="meta-chip">iOS 17+ / 18+</span>
+          </div>
           <h3 data-i18n="arch_ios_title">🍏 Apple iOS</h3>
           <p data-i18n="arch_ios_desc">Η έκδοση για iPhone & iPad βρίσκεται σε ενεργό ανάπτυξη με 100% native Cupertino design, Face ID και Apple Silicon βελτιστοποίηση.</p>
           <span class="secondary-btn disabled-btn" data-i18n="ios_status_btn">⏳ Σύντομα στο App Store</span>
@@ -76,79 +219,244 @@
       </div>
     </section>
 
-    <section class="features">
-      <h2 data-i18n="features_title">Κύριες Δυνατότητες</h2>
-      <div class="features-grid">
-        <div class="feature-item">
-          <h4 data-i18n="feat_1_title">📸 AI Σάρωση Αναφορών</h4>
-          <p data-i18n="feat_1_desc">Φωτογραφήστε το δελτίο παραγωγής και η εφαρμογή εξάγει αυτόματα όλα τα στοιχεία.</p>
+    <!-- Live Plant Simulator Widget Section -->
+    <section class="simulator-section reveal" id="simulator">
+      <h2 data-i18n="sim_title">🧮 Live Προσομοιωτής Παραγωγής & Δεξαμενών</h2>
+      <p class="section-desc" data-i18n="sim_subtitle">Δοκιμάστε τη λογική των υπολογισμών του Synthesis σε πραγματικό χρόνο:</p>
+
+      <div class="simulator-panel glass-panel">
+        <div class="sim-controls-grid">
+          <!-- Target Production Slider -->
+          <div class="sim-control-group">
+            <div class="sim-control-label">
+              <span data-i18n="sim_target_label">Στόχος Παραγωγής Ασφαλτομίγματος:</span>
+              <span class="sim-slider-val" id="sim-target-val">350 tn</span>
+            </div>
+            <input type="range" min="50" max="1200" step="25" value="350" id="sim-range" class="sim-range-slider" aria-label="Ρυθμιστής τόνων παραγωγής">
+          </div>
+
+          <!-- Recipe Segmented Control -->
+          <div class="sim-control-group">
+            <div class="sim-control-label">
+              <span data-i18n="sim_recipe_label">Επιλογή Συνταγής / Προδιαγραφής:</span>
+            </div>
+            <div class="segmented-control" role="group" aria-label="Επιλογή Συνταγής Ασφαλτομίγματος">
+              <button class="segment-btn active" data-bitumen="0.052" data-fuel="6.2">Σύνθεση 1 (5.2%)</button>
+              <button class="segment-btn" data-bitumen="0.048" data-fuel="5.8">Σύνθεση 2 (4.8%)</button>
+              <button class="segment-btn" data-bitumen="0.058" data-fuel="6.8">Σύνθεση 3 (5.8%)</button>
+            </div>
+          </div>
         </div>
-        <div class="feature-item">
-          <h4 data-i18n="feat_2_title">📋 Διαχείριση & Φιλτράρισμα</h4>
-          <p data-i18n="feat_2_desc">Πλήρες ιστορικό αναφορών με προηγμένη αναζήτηση σε scrollable πίνακες.</p>
-        </div>
-        <div class="feature-item">
-          <h4 data-i18n="feat_3_title">📊 Στατιστικά & Γραφήματα</h4>
-          <p data-i18n="feat_3_desc">Real-time ανάλυση παραγωγής, διαδραστικό ημερολόγιο και bar charts.</p>
-        </div>
-        <div class="feature-item">
-          <h4 data-i18n="feat_4_title">📤 Επαγγελματική Εξαγωγή</h4>
-          <p data-i18n="feat_4_desc">Άμεσος διαμοιρασμός σε PDF και Excel με φύλλα σύνοψης & αναλυτικών στοιχείων.</p>
-        </div>
-        <div class="feature-item">
-          <h4 data-i18n="feat_5_title">🔒 Ασφάλεια & Offline Λειτουργία</h4>
-          <p data-i18n="feat_5_desc">Τοπική αποθήκευση δεδομένων (SQLite) και βιομετρική αυθεντικοποίηση (FaceID).</p>
-        </div>
-        <div class="feature-item">
-          <h4 data-i18n="feat_6_title">🌍 Διεθνοποίηση</h4>
-          <p data-i18n="feat_6_desc">Πλήρης υποστήριξη: Ελληνικά, English, Deutsch, Français, Español, Italiano, Русский, 中文, हिन्दी.</p>
-        </div>
-        <div class="feature-item">
-          <h4 data-i18n="feat_7_title">🛢️ Διαχείριση Δεξαμενών</h4>
-          <p data-i18n="feat_7_desc">Οπτική παρακολούθηση ποσοτήτων ασφάλτου και ιστορικό κινήσεων με δυναμικά γραφικά.</p>
-        </div>
-        <div class="feature-item">
-          <h4 data-i18n="feat_8_title">🧮 Θεωρητικοί Υπολογισμοί</h4>
-          <p data-i18n="feat_8_desc">Αυτόματος υπολογισμός παραγωγικών δυνατοτήτων βάσει αποθεμάτων και εργαστηριακών συνθέσεων.</p>
-        </div>
-        <div class="feature-item">
-          <h4 data-i18n="feat_9_title">⚠️ Έλεγχος Συμμόρφωσης</h4>
-          <p data-i18n="feat_9_desc">Αυτόματος εντοπισμός αποκλίσεων SPC, αρχείο ειδοποιήσεων και λεπτομερής διαγνωστική προβολή.</p>
-        </div>
-        <div class="feature-item">
-          <h4 data-i18n="feat_10_title">👤 Σύγχρονος Λογαριασμός & Προφίλ</h4>
-          <p data-i18n="feat_10_desc">Διαχείριση λογαριασμού με ασφαλή σύνδεση, δυνατότητα αλλαγής ονόματος χρήστη, ολική διαγραφή δεδομένων και επιλογή Cloud ή αυστηρά Offline λειτουργίας.</p>
-        </div>
-        <div class="feature-item">
-          <h4 data-i18n="feat_11_title">⛽ Δεξαμενές Καυσίμων & Κατανάλωση</h4>
-          <p data-i18n="feat_11_desc">Παρακολούθηση αποθεμάτων Μαζούτ και Diesel, καταγραφή ανεφοδιασμών και δεικτών ενεργειακής απόδοσης ανά τόνο (l/tn).</p>
-        </div>
-        <div class="feature-item">
-          <h4 data-i18n="feat_12_title">☁️ Cloud Sync & Αυτόματο Backup</h4>
-          <p data-i18n="feat_12_desc">Ασφαλής αμφίδρομος συγχρονισμός σε Firebase Firestore, προστασία ανά χρήστη και άμεση επαναφορά δεδομένων.</p>
+
+        <!-- Calculated Live Metrics & Visual Tank -->
+        <div class="sim-outputs-grid">
+          <div class="sim-cards-subgrid">
+            <div class="sim-metric-card">
+              <span class="sim-metric-lbl" data-i18n="sim_bitumen_needed">Απαιτούμενη Άσφαλτος</span>
+              <span class="sim-metric-val" id="metric-bitumen">18.2 tn</span>
+            </div>
+            <div class="sim-metric-card">
+              <span class="sim-metric-lbl" data-i18n="sim_aggregates_needed">Αδρανή Υλικά</span>
+              <span class="sim-metric-val" id="metric-aggregates">331.8 tn</span>
+            </div>
+            <div class="sim-metric-card">
+              <span class="sim-metric-lbl" data-i18n="sim_fuel_needed">Εκτιμώμενο Καύσιμο (Μαζούτ)</span>
+              <span class="sim-metric-val" id="metric-fuel">2,170 Lt</span>
+            </div>
+            <div class="sim-metric-card">
+              <span class="sim-metric-lbl" data-i18n="sim_time_saved">Εξοικονόμηση Χρόνου με AI</span>
+              <span class="sim-metric-val" id="metric-time">~3.5 ώρες</span>
+            </div>
+          </div>
+
+          <!-- Visual Bitumen Tank -->
+          <div class="tank-visualizer">
+            <div class="tank-cylinder" aria-label="Γραφική απεικόνιση στάθμης δεξαμενής ασφάλτου">
+              <div class="tank-liquid" id="tank-fluid"></div>
+            </div>
+            <div class="tank-badge" id="tank-badge-text">Στάθμη: 65% • 165°C</div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="legal">
+    <!-- Bento Features Section -->
+    <section class="features reveal" id="features">
+      <h2 data-i18n="features_title">Κύριες Δυνατότητες</h2>
+      
+      <div class="features-grid reveal-stagger">
+        <!-- Feature 1: AI Report Scanning (Wide Bento) -->
+        <div class="feature-item bento-wide">
+          <h4 data-i18n="feat_1_title">📸 AI Σάρωση Αναφορών</h4>
+          <p data-i18n="feat_1_desc">Φωτογραφήστε το δελτίο παραγωγής και η εφαρμογή εξάγει αυτόματα όλα τα στοιχεία.</p>
+          <div class="scanner-demo-box">
+            <div class="scanner-laser" aria-hidden="true"></div>
+            <div style="opacity: 0.8;">[OCR Vision Neural Engine Active]</div>
+            <div class="parsed-tokens-row">
+              <span class="token-pill"># Αριθμός: 1042</span>
+              <span class="token-pill"># Τόνοι: 28.4 tn</span>
+              <span class="token-pill"># Τύπος: ΑΣ 12.5</span>
+              <span class="token-pill"># Ώρα: 14:22:05</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 2: Tank Management (Wide Bento) -->
+        <div class="feature-item bento-wide">
+          <h4 data-i18n="feat_7_title">🛢️ Διαχείριση Δεξαμενών</h4>
+          <p data-i18n="feat_7_desc">Οπτική παρακολούθηση ποσοτήτων ασφάλτου και ιστορικό κινήσεων με δυναμικά γραφικά.</p>
+          <div class="scanner-demo-box">
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <span>Δεξαμενή #1 (Ασφάλτου)</span>
+              <span style="color:#34C759; font-weight:700;">48.5 tn / 60 tn</span>
+            </div>
+            <div style="width:100%; height:8px; background:var(--sys-border); border-radius:4px; margin-top:8px; overflow:hidden;">
+              <div style="width:80%; height:100%; background:linear-gradient(90deg, #0A84FF, #30D158); border-radius:4px;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 3: Statistics & Graphs -->
+        <div class="feature-item">
+          <h4 data-i18n="feat_3_title">📊 Στατιστικά & Γραφήματα</h4>
+          <p data-i18n="feat_3_desc">Real-time ανάλυση παραγωγής, διαδραστικό ημερολόγιο και bar charts.</p>
+          <div class="mini-bar-chart" aria-hidden="true">
+            <div class="chart-bar" style="height: 45%;"></div>
+            <div class="chart-bar" style="height: 75%;"></div>
+            <div class="chart-bar" style="height: 60%;"></div>
+            <div class="chart-bar" style="height: 90%;"></div>
+            <div class="chart-bar" style="height: 65%;"></div>
+            <div class="chart-bar" style="height: 100%;"></div>
+          </div>
+        </div>
+
+        <!-- Feature 4: Offline & FaceID -->
+        <div class="feature-item">
+          <h4 data-i18n="feat_5_title">🔒 Ασφάλεια & Offline Λειτουργία</h4>
+          <p data-i18n="feat_5_desc">Τοπική αποθήκευση δεδομένων (SQLite) και βιομετρική αυθεντικοποίηση (FaceID).</p>
+        </div>
+
+        <!-- Feature 5: Cloud Sync -->
+        <div class="feature-item">
+          <h4 data-i18n="feat_12_title">☁️ Cloud Sync & Αυτόματο Backup</h4>
+          <p data-i18n="feat_12_desc">Ασφαλής αμφίδρομος συγχρονισμός σε Firebase Firestore, προστασία ανά χρήστη και άμεση επαναφορά δεδομένων.</p>
+        </div>
+
+        <!-- Feature 6: Fuel Tanks & Efficiency -->
+        <div class="feature-item">
+          <h4 data-i18n="feat_11_title">⛽ Δεξαμενές Καυσίμων & Κατανάλωση</h4>
+          <p data-i18n="feat_11_desc">Παρακολούθηση αποθεμάτων Μαζούτ και Diesel, καταγραφή ανεφοδιασμών και δεικτών ενεργειακής απόδοσης ανά τόνο (l/tn).</p>
+        </div>
+
+        <!-- Feature 7: Modern Account & Profile -->
+        <div class="feature-item">
+          <h4 data-i18n="feat_10_title">👤 Σύγχρονος Λογαριασμός & Προφίλ</h4>
+          <p data-i18n="feat_10_desc">Διαχείριση λογαριασμού με ασφαλή σύνδεση, δυνατότητα αλλαγής ονόματος χρήστη, ολική διαγραφή δεδομένων και επιλογή Cloud ή αυστηρά Offline λειτουργίας.</p>
+        </div>
+
+        <!-- Feature 8: Internationalization -->
+        <div class="feature-item">
+          <h4 data-i18n="feat_6_title">🌍 Διεθνοποίηση</h4>
+          <p data-i18n="feat_6_desc">Πλήρης υποστήριξη: Ελληνικά, English, Deutsch, Français, Español, Italiano, Русский, 中文, हिन्दी.</p>
+        </div>
+
+        <!-- Feature 9: SPC Compliance Check -->
+        <div class="feature-item">
+          <h4 data-i18n="feat_9_title">⚠️ Έλεγχος Συμμόρφωσης</h4>
+          <p data-i18n="feat_9_desc">Αυτόματος εντοπισμός αποκλίσεων SPC, αρχείο ειδοποιήσεων και λεπτομερής διαγνωστική προβολή.</p>
+        </div>
+
+        <!-- Feature 10: Theoretical Calculations -->
+        <div class="feature-item">
+          <h4 data-i18n="feat_8_title">🧮 Θεωρητικοί Υπολογισμοί</h4>
+          <p data-i18n="feat_8_desc">Αυτόματος υπολογισμός παραγωγικών δυνατοτήτων βάσει αποθεμάτων και εργαστηριακών συνθέσεων.</p>
+        </div>
+
+        <!-- Feature 11: Management & Filtering -->
+        <div class="feature-item">
+          <h4 data-i18n="feat_2_title">📋 Διαχείριση & Φιλτράρισμα</h4>
+          <p data-i18n="feat_2_desc">Πλήρες ιστορικό αναφορών με προηγμένη αναζήτηση σε scrollable πίνακες.</p>
+        </div>
+
+        <!-- Feature 12: Professional Export -->
+        <div class="feature-item">
+          <h4 data-i18n="feat_4_title">📤 Επαγγελματική Εξαγωγή</h4>
+          <p data-i18n="feat_4_desc">Άμεσος διαμοιρασμός σε PDF και Excel με φύλλα σύνοψης & αναλυτικών στοιχείων.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="faq-section reveal" id="faq">
+      <h2 data-i18n="faq_title">💬 Συχνές Ερωτήσεις (FAQ)</h2>
+      
+      <div class="faq-list">
+        <!-- Q1 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq_1_q">Πώς μπορώ να εγκαταστήσω το αρχείο APK στο Android;</span>
+            <span class="faq-chevron" aria-hidden="true">›</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq_1_a">Αφού κατεβάσετε το APK για την αρχιτεκτονική της συσκευής σας (συνήθως ARM64), ανοίξτε το αρχείο. Εάν σας ζητηθεί, επιτρέψτε την εγκατάσταση από αυτήν την πηγή στις ρυθμίσεις ασφαλείας του Android. Η εφαρμογή είναι πλήρως συμβατή με Android 8.0 έως Android 16.</p>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq_2_q">Λειτουργεί η εφαρμογή χωρίς σύνδεση στο διαδίκτυο (Offline);</span>
+            <span class="faq-chevron" aria-hidden="true">›</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq_2_a">Απολύτως. Το Synthesis είναι κατασκευασμένο με αρχιτεκτονική Offline-First. Όλα τα δεδομένα, δελτία, δεξαμενές και στατιστικά αποθηκεύονται τοπικά σε κρυπτογραφημένη βάση SQLite. Η μόνη προαιρετική λειτουργία που απαιτεί διαδίκτυο είναι η σάρωση δελτίων μέσω AI OCR (αν επιθυμείτε) και ο προαιρετικός συγχρονισμός Cloud.</p>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq_3_q">Πότε θα κυκλοφορήσει η έκδοση για iPhone & iPad (Apple iOS);</span>
+            <span class="faq-chevron" aria-hidden="true">›</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq_3_a">Η έκδοση για iOS αναπτύσσεται ενεργά με 100% native Cupertino στοιχεία, Face ID, και Apple Silicon βελτιστοποίηση. Θα διατεθεί σύντομα μέσω Apple TestFlight και του επίσημου App Store.</p>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq_4_q">Πώς διασφαλίζεται η ασφάλεια των δεδομένων και των φωτογραφιών AI;</span>
+            <span class="faq-chevron" aria-hidden="true">›</span>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq_4_a">Η εφαρμογή ακολουθεί το μοντέλο Bring-Your-Own-Key (BYOK). Οι φωτογραφίες των δελτίων μεταδίδονται κρυπτογραφημένα (HTTPS/TLS) αποκλειστικά στο επίσημο API του παρόχου AI που επιλέγετε και δεν αποθηκεύονται σε εξωτερικούς servers. Επιπλέον, υποστηρίζεται λειτουργία 100% Offline Mode και δυνατότητα Full Wipe.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Legal Section -->
+    <section class="legal reveal" id="legal">
       <h2 data-i18n="legal_title">⚖️ Νομικές Πληροφορίες & Πολιτικές</h2>
       
       <div class="legal-group glass-panel">
         <a href="disclaimer.html" class="legal-link">
           <span data-i18n="legal_1_title">1. Αποποίηση Ευθύνης</span>
-          <span class="chevron">›</span>
+          <span class="chevron" aria-hidden="true">›</span>
         </a>
         <a href="privacy.html" class="legal-link">
           <span data-i18n="legal_2_title">2. Πολιτική Απορρήτου & GDPR</span>
-          <span class="chevron">›</span>
+          <span class="chevron" aria-hidden="true">›</span>
         </a>
         <a href="cookies.html" class="legal-link">
           <span data-i18n="legal_3_title">3. Πολιτική Cookies</span>
-          <span class="chevron">›</span>
+          <span class="chevron" aria-hidden="true">›</span>
         </a>
         <a href="copyright.html" class="legal-link">
           <span data-i18n="legal_4_title">4. Πνευματικά Δικαιώματα</span>
-          <span class="chevron">›</span>
+          <span class="chevron" aria-hidden="true">›</span>
         </a>
       </div>
     </section>
