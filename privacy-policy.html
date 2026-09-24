@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Synthesis — Privacy Policy & Data Deletion</title>
+  <meta name="description" content="Privacy Policy, GDPR compliance, and data deletion instructions for the Synthesis mobile application.">
+  <link rel="canonical" href="https://kwstas147.github.io/Synthesis-Distribution/privacy-policy.html">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kwstas147.github.io/Synthesis-Distribution/privacy-policy.html">
+  <meta property="og:title" content="Synthesis — Privacy Policy & Data Deletion">
+  <meta property="og:description" content="Privacy Policy, GDPR compliance, and user data deletion instructions for the Synthesis mobile application.">
+  <meta property="og:site_name" content="Synthesis Distribution">
+
+  <!-- Structured Data: WebPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Privacy Policy & Data Deletion Instructions",
+    "description": "Privacy Policy, GDPR compliance, and data deletion instructions for the Synthesis mobile application.",
+    "url": "https://kwstas147.github.io/Synthesis-Distribution/privacy-policy.html",
+    "dateModified": "2026-09-24",
+    "inLanguage": "en",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Synthesis Distribution",
+      "url": "https://kwstas147.github.io/Synthesis-Distribution/"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* — Design Tokens — */
+    :root {
+      --sys-bg: #F2F2F7;
+      --sys-bg-deep: #E8E8ED;
+      --sys-text: #1D1D1F;
+      --sys-text-secondary: #86868B;
+      --sys-card-bg: rgba(255, 255, 255, 0.62);
+      --sys-card-bg-hover: rgba(255, 255, 255, 0.85);
+      --sys-nav-bg: rgba(255, 255, 255, 0.72);
+      --sys-primary: #0071E3;
+      --sys-primary-glow: rgba(0, 113, 227, 0.35);
+      --sys-accent: #5E5CE6;
+      --sys-border: rgba(60, 60, 67, 0.12);
+      --sys-shadow: rgba(0, 0, 0, 0.08);
+      --sys-shadow-elevated: rgba(0, 0, 0, 0.14);
+
+      /* Aurora */
+      --aurora-1: rgba(0, 113, 227, 0.16);
+      --aurora-2: rgba(94, 92, 230, 0.13);
+      --aurora-3: rgba(191, 90, 242, 0.11);
+      --aurora-4: rgba(255, 55, 95, 0.08);
+
+      /* Spacing (8pt grid) */
+      --space-xs: 4px;
+      --space-sm: 8px;
+      --space-md: 16px;
+      --space-lg: 24px;
+      --space-xl: 32px;
+      --space-2xl: 48px;
+      --space-3xl: 64px;
+
+      /* Typography */
+      --font-display: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+      --tracking-tight: -0.03em;
+      --tracking-normal: -0.01em;
+
+      /* Radii */
+      --radius-md: 14px;
+      --radius-lg: 20px;
+
+      /* Blur */
+      --blur-nav: saturate(180%) blur(20px);
+      --blur-card: saturate(150%) blur(16px);
+    }
+
+    /* — Dark Theme — */
+    .dark-theme {
+      --sys-bg: #000000;
+      --sys-bg-deep: #0A0A0A;
+      --sys-text: #F5F5F7;
+      --sys-text-secondary: #A1A1A6;
+      --sys-card-bg: rgba(28, 28, 30, 0.58);
+      --sys-card-bg-hover: rgba(38, 38, 40, 0.80);
+      --sys-nav-bg: rgba(22, 22, 24, 0.72);
+      --sys-primary: #0A84FF;
+      --sys-primary-glow: rgba(10, 132, 255, 0.35);
+      --sys-accent: #5E5CE6;
+      --sys-border: rgba(84, 84, 88, 0.38);
+      --sys-shadow: rgba(0, 0, 0, 0.35);
+      --sys-shadow-elevated: rgba(0, 0, 0, 0.65);
+      --aurora-1: rgba(10, 132, 255, 0.14);
+      --aurora-2: rgba(94, 92, 230, 0.12);
+      --aurora-3: rgba(191, 90, 242, 0.09);
+      --aurora-4: rgba(255, 55, 95, 0.07);
+    }
+
+    /* — Reset & Base — */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-display);
+      background-color: var(--sys-bg);
+      color: var(--sys-text);
+      line-height: 1.65;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* — Skip Link — */
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 16px;
+      background: var(--sys-primary);
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 8px;
+      z-index: 9999;
+      transition: top 0.2s;
+    }
+    .skip-link:focus { top: 16px; }
+
+    /* — Aurora Background — */
+    .aurora-bg {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .aurora-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(120px);
+      opacity: 0.6;
+      will-change: transform;
+      animation: auroraFloat 20s ease-in-out infinite alternate;
+    }
+    .aurora-orb:nth-child(1) {
+      width: 600px; height: 600px;
+      background: var(--aurora-1);
+      top: -10%; left: -5%;
+      animation-delay: 0s;
+    }
+    .aurora-orb:nth-child(2) {
+      width: 500px; height: 500px;
+      background: var(--aurora-2);
+      top: 30%; right: -10%;
+      animation-delay: -5s;
+    }
+    .aurora-orb:nth-child(3) {
+      width: 450px; height: 450px;
+      background: var(--aurora-3);
+      bottom: 10%; left: 20%;
+      animation-delay: -10s;
+    }
+    @keyframes auroraFloat {
+      0% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(40px, -30px) scale(1.05); }
+      100% { transform: translate(-20px, 20px) scale(0.97); }
+    }
+
+    /* — Nav — */
+    .cupertino-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--sys-nav-bg);
+      backdrop-filter: var(--blur-nav);
+      -webkit-backdrop-filter: var(--blur-nav);
+      border-bottom: 1px solid var(--sys-border);
+      padding: 0 var(--space-lg);
+      height: 52px;
+    }
+    .nav-content {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+    }
+    .brand-link {
+      text-decoration: none;
+      color: inherit;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: var(--tracking-tight);
+    }
+    .nav-controls { display: flex; gap: var(--space-sm); }
+    .icon-btn {
+      background: none;
+      border: 1px solid var(--sys-border);
+      border-radius: var(--radius-md);
+      width: 36px; height: 36px;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .icon-btn:hover { background: var(--sys-card-bg-hover); transform: scale(1.05); }
+
+    /* — Container — */
+    .container {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: var(--space-xl) var(--space-lg) var(--space-3xl);
+    }
+
+    /* — Glass Panel — */
+    .glass-panel {
+      background: var(--sys-card-bg);
+      backdrop-filter: var(--blur-card);
+      -webkit-backdrop-filter: var(--blur-card);
+      border: 1px solid var(--sys-border);
+      border-radius: var(--radius-lg);
+      box-shadow: 0 4px 24px var(--sys-shadow), 0 1px 3px var(--sys-shadow);
+      transition: box-shadow 0.3s, background 0.3s;
+    }
+
+    /* — Back Button — */
+    .back-btn {
+      background: none;
+      border: none;
+      color: var(--sys-primary);
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      padding-right: var(--space-md);
+      transition: opacity 0.2s;
+      margin-bottom: var(--space-lg);
+    }
+    .back-btn:hover { opacity: 0.75; }
+    .back-btn .chevron {
+      font-size: 24px;
+      margin-right: 4px;
+      line-height: 1;
+    }
+
+    /* — Page Title — */
+    .page-title {
+      font-size: clamp(22px, 4vw, 30px);
+      font-weight: 700;
+      letter-spacing: var(--tracking-tight);
+      margin-bottom: var(--space-sm);
+    }
+    .page-subtitle {
+      font-size: 14px;
+      color: var(--sys-text-secondary);
+      margin-bottom: var(--space-xl);
+    }
+
+    /* — Policy Content — */
+    .policy-content {
+      padding: var(--space-xl) var(--space-xl) var(--space-2xl);
+    }
+    .policy-content h2 {
+      font-size: 19px;
+      font-weight: 700;
+      letter-spacing: var(--tracking-tight);
+      margin-top: var(--space-xl);
+      margin-bottom: var(--space-md);
+      color: var(--sys-primary);
+    }
+    .policy-content h2:first-child {
+      margin-top: 0;
+    }
+    .policy-content h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: var(--space-lg);
+      margin-bottom: var(--space-sm);
+    }
+    .policy-content p {
+      margin-bottom: var(--space-md);
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--sys-text);
+    }
+    .policy-content ul {
+      margin-left: var(--space-lg);
+      margin-bottom: var(--space-md);
+    }
+    .policy-content li {
+      margin-bottom: var(--space-sm);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    .policy-content strong {
+      font-weight: 600;
+    }
+    .policy-content a {
+      color: var(--sys-primary);
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.2s;
+    }
+    .policy-content a:hover { opacity: 0.75; }
+
+    /* — Effective Date Badge — */
+    .date-badge {
+      display: inline-block;
+      background: var(--sys-primary);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 100px;
+      letter-spacing: 0.02em;
+      margin-bottom: var(--space-lg);
+    }
+
+    /* — Section Divider — */
+    .section-divider {
+      border: none;
+      border-top: 1px solid var(--sys-border);
+      margin: var(--space-xl) 0;
+    }
+
+    /* — Contact Card — */
+    .contact-card {
+      background: var(--sys-card-bg-hover);
+      border: 1px solid var(--sys-border);
+      border-radius: var(--radius-md);
+      padding: var(--space-lg);
+      margin-top: var(--space-lg);
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+    }
+    .contact-icon {
+      font-size: 28px;
+      flex-shrink: 0;
+    }
+    .contact-info {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* — Footer — */
+    footer {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: var(--space-2xl) var(--space-lg);
+      color: var(--sys-text-secondary);
+      font-size: 12.5px;
+      letter-spacing: var(--tracking-normal);
+    }
+
+    /* — Responsive — */
+    @media (max-width: 600px) {
+      .policy-content {
+        padding: var(--space-lg) var(--space-md) var(--space-xl);
+      }
+      .container {
+        padding: var(--space-lg) var(--space-md) var(--space-2xl);
+      }
+    }
+  </style>
+</head>
+<body class="light-theme">
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Aurora Mesh Background -->
+  <div class="aurora-bg" aria-hidden="true">
+    <div class="aurora-orb"></div>
+    <div class="aurora-orb"></div>
+    <div class="aurora-orb"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="cupertino-nav" aria-label="Main Navigation">
+    <div class="nav-content">
+      <div>
+        <a href="index.html" class="brand-link">Synthesis</a>
+      </div>
+      <div class="nav-controls">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark/light theme">
+          <span class="icon-moon">🌙</span>
+          <span class="icon-sun" style="display:none;">☀️</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container" id="main-content">
+    <a href="index.html" class="back-btn" aria-label="Back to home page">
+      <span class="chevron">‹</span> Back
+    </a>
+
+    <h1 class="page-title">🔒 Privacy Policy & Data Deletion Instructions</h1>
+    <p class="page-subtitle">How your data is handled in the Synthesis application</p>
+
+    <div class="glass-panel">
+      <div class="policy-content">
+        <span class="date-badge">Effective Date: September 3, 2026</span>
+
+        <h2>1. Introduction</h2>
+        <p>Synthesis ("we", "our", or "us") is committed to protecting your privacy. This document describes how your information is handled and how you can request or perform data deletion when using the Synthesis mobile application (the "App").</p>
+
+        <hr class="section-divider">
+
+        <h2>2. Data Collection and Usage</h2>
+        <p>Synthesis is designed as an offline-first industrial management application for production reporting, asphalt mixture statistics, fuel refills, and laboratory mixture tracking.</p>
+        <ul>
+          <li><strong>Account & Cloud Sync:</strong> Basic profile information (e.g., email, secure authentication tokens) is managed securely via Cloud services (Firebase).</li>
+          <li><strong>Offline Mode:</strong> You can opt to use the App in a strictly Offline Mode from the Settings. In Offline Mode, no data is synced, and features relying on Cloud services (like AI OCR) are disabled, keeping all operations entirely local.</li>
+          <li><strong>Local Storage:</strong> Production reports, mixture recipes, material quantities, fuel logs, and site information are stored locally on your device using a secure SQLite database.</li>
+          <li><strong>Biometric Data:</strong> If you enable App Lock, biometric authentication (Fingerprint or Face ID) is processed entirely on-device by your Operating System's native security APIs (<code>local_auth</code>). We do not collect, transmit, or store your biometric data.</li>
+          <li><strong>Camera and Storage Access:</strong> The App may request access to your device camera or media storage solely for scanning documents/QR codes or exporting production reports (PDF/Excel files). Photos sent for OCR scanning are processed ephemerally and are not stored long-term on any server.</li>
+        </ul>
+
+        <hr class="section-divider">
+
+        <h2>3. Data Protection and Third-Party Sharing</h2>
+        <ul>
+          <li><strong>No Third-Party Tracking:</strong> We do not track your activity across other apps or websites.</li>
+          <li><strong>No Data Selling:</strong> We do not sell, trade, or share your data with any third parties.</li>
+          <li><strong>Data Transfers:</strong> Your data remains strictly on your local device unless you explicitly choose to export reports or back up your database file.</li>
+        </ul>
+
+        <hr class="section-divider">
+
+        <h2>4. User Data Deletion Instructions</h2>
+        <p>Since Synthesis stores your data locally on your mobile device, you have total control over your data deletion:</p>
+
+        <h3>A. In-App Deletion (Full Wipe)</h3>
+        <ul>
+          <li><strong>Account Deletion:</strong> You have the right to permanently delete your account directly from the App's Account Settings. Performing an account deletion triggers a <strong>Full Wipe</strong>, which securely and irreversibly erases all your data from both your local device (SQLite databases) and our Cloud servers (Firebase).</li>
+          <li><strong>Clear App Cache/Data:</strong> Alternatively, you can clear app data via Android Device Settings → Apps → Synthesis → Storage → Clear Data. This will delete all local data, but it will not delete your Cloud account. To completely erase your presence, please use the in-app Account Deletion feature.</li>
+        </ul>
+
+        <h3>B. Request Data Deletion Assistance</h3>
+        <ul>
+          <li><strong>Email Request:</strong> Send an email to <a href="mailto:kwstas147@gmail.com">kwstas147@gmail.com</a> with the subject line "Synthesis Data Deletion Request".</li>
+          <li><strong>Processing:</strong> We will guide you on confirming full local and cloud deletion or assist with any inquiries within 48 hours.</li>
+        </ul>
+
+        <hr class="section-divider">
+
+        <h2>5. Security</h2>
+        <p>We take reasonable security measures to protect your information locally. App authentication tokens and keys are secured using Android Encrypted Shared Preferences / KeyStore. All network communications use HTTPS/TLS encryption exclusively.</p>
+
+        <hr class="section-divider">
+
+        <h2>6. Children's Privacy</h2>
+        <p>Our App is intended for professional use and does not knowingly target or collect personal information from children under 13.</p>
+
+        <hr class="section-divider">
+
+        <h2>7. Contact Us</h2>
+        <p>If you have any questions or suggestions regarding this policy, please contact us at:</p>
+
+        <div class="contact-card">
+          <span class="contact-icon">📧</span>
+          <div class="contact-info">
+            <strong>Email:</strong> <a href="mailto:kwstas147@gmail.com">kwstas147@gmail.com</a><br>
+            <small>We respond within 48 hours.</small>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Synthesis. All Rights Reserved. Developed with 💻 Clean Architecture & Production-Ready Standards.</p>
+  </footer>
+
+  <!-- Theme Toggle Script (self-contained) -->
+  <script>
+    (() => {
+      const toggle = document.getElementById('theme-toggle');
+      const body = document.body;
+      const moon = toggle.querySelector('.icon-moon');
+      const sun = toggle.querySelector('.icon-sun');
+
+      /* Φόρτωση αποθηκευμένου θέματος */
+      const saved = localStorage.getItem('synthesis-theme');
+      if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        body.classList.replace('light-theme', 'dark-theme');
+        moon.style.display = 'none';
+        sun.style.display = '';
+      }
+
+      toggle.addEventListener('click', () => {
+        const isDark = body.classList.contains('dark-theme');
+        if (isDark) {
+          body.classList.replace('dark-theme', 'light-theme');
+          moon.style.display = '';
+          sun.style.display = 'none';
+          localStorage.setItem('synthesis-theme', 'light');
+        } else {
+          body.classList.replace('light-theme', 'dark-theme');
+          moon.style.display = 'none';
+          sun.style.display = '';
+          localStorage.setItem('synthesis-theme', 'dark');
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>
