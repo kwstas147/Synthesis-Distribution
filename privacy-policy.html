@@ -23,7 +23,7 @@
     "name": "Privacy Policy & Data Deletion Instructions",
     "description": "Privacy Policy, GDPR compliance, and data deletion instructions for the Synthesis mobile application.",
     "url": "https://kwstas147.github.io/Synthesis-Distribution/privacy-policy.html",
-    "dateModified": "2026-09-24",
+    "dateModified": "2026-10-29",
     "inLanguage": "en",
     "isPartOf": {
       "@type": "WebSite",
@@ -412,7 +412,7 @@
 
     <div class="glass-panel">
       <div class="policy-content">
-        <span class="date-badge">Effective Date: September 24, 2026</span>
+        <span class="date-badge">Effective Date: October 29, 2026</span>
 
         <h2>1. Introduction</h2>
         <p>Synthesis ("we", "our", or "us") is committed to protecting your privacy. This document describes how your information is handled and how you can request or perform data deletion when using the Synthesis mobile application (the "App").</p>
@@ -424,28 +424,33 @@
         <ul>
           <li><strong>Account & Authentication:</strong> You may create an account using <strong>Email/Password</strong>, <strong>Google Sign-In</strong>, or <strong>Sign in with Apple</strong>. When using social sign-in, we receive only your email address, display name, and a unique identifier from the respective provider. We do not access your Google or Apple account data beyond what is needed for authentication.</li>
           <li><strong>Cloud Sync (Firebase):</strong> If you are signed in, your production data (reports, mixtures, materials, fuel logs, sites) is securely synchronized to <strong>Google Cloud Firestore</strong> under your authenticated user account. Data is encrypted in transit (TLS) and at rest. Each user can only access their own data — enforced by server-side security rules.</li>
+          <li><strong>Organizations (Team Sharing):</strong> If you create or join an organization (company), the production data you enter for that organization's plants is stored in Firestore under the organization and is visible to its members. To invite a colleague, the organization stores the invitee's email address until the invitation is accepted. Every change to shared data is recorded in the organization's change history (audit log) together with the display name (or, if none is set, the email address) and user ID of the member who made it, the time, and the values before and after the change.</li>
+          <li><strong>Shared Backup Files:</strong> When you share an encrypted backup file protected by a PIN, the file's decryption key, a salted hash of the PIN and a counter of unlock attempts are stored in Firestore so the recipient can unlock it. The key is released only after a correct PIN, is locked permanently after the maximum number of failed attempts, and the share expires automatically.</li>
           <li><strong>Offline Mode:</strong> You can opt to use the App in a strictly Offline Mode from the Settings. In Offline Mode, no data is synced, and features relying on Cloud services (like AI OCR) are disabled, keeping all operations entirely local.</li>
           <li><strong>Local Storage:</strong> Production reports, mixture recipes, material quantities, fuel logs, and site information are stored locally on your device using a secure, encrypted SQLite database.</li>
           <li><strong>Biometric Data:</strong> If you enable App Lock, biometric authentication (Fingerprint or Face ID) is processed entirely on-device by your Operating System's native security APIs. We do not collect, transmit, or store your biometric data.</li>
-          <li><strong>AI-Powered OCR (Bring-Your-Own-Key):</strong> The App supports document scanning via third-party AI services: <strong>Google Gemini</strong>, <strong>OpenAI (GPT-4o)</strong>, <strong>Anthropic (Claude)</strong>, and <strong>DeepSeek</strong>. The App follows a <strong>Bring-Your-Own-Key (BYOK)</strong> model — you provide your own API key, and image data is transmitted directly from your device to the AI provider you choose. Photos are processed ephemerally for text extraction only and are <strong>not stored</strong> by us or by the AI providers under their API terms of service. You can review each provider's data handling policy independently.</li>
+          <li><strong>AI-Powered OCR (Bring-Your-Own-Key):</strong> The App supports document scanning via third-party AI services: <strong>Google Gemini</strong>, <strong>OpenAI (GPT-4o)</strong>, <strong>Anthropic (Claude)</strong>, and <strong>DeepSeek</strong>. The App follows a <strong>Bring-Your-Own-Key (BYOK)</strong> model — you provide your own API key, and image data is transmitted directly from your device to the AI provider you choose, solely to extract the text. The images never pass through or are stored on our servers. The AI provider processes them under its own API terms and the settings of your account with it; some providers may temporarily retain API inputs (e.g. up to 30 days) for abuse monitoring. You can review each provider's data handling policy using the links below.</li>
           <li><strong>On-Device OCR (Google ML Kit):</strong> As an alternative to cloud AI, the App offers fully <strong>offline text recognition</strong> using Google ML Kit, which runs entirely on your device. No image data leaves your phone when using this mode.</li>
           <li><strong>Camera and Storage Access:</strong> The App may request access to your device camera solely for scanning production documents. Storage access is requested only for exporting reports (PDF/Excel files). Camera hardware is declared as optional — the App works on devices without a camera.</li>
           <li><strong>App Integrity (Firebase App Check):</strong> To protect our backend services from abuse, we use <strong>Firebase App Check</strong> with Android Play Integrity. This verifies that requests originate from a genuine installation of the App. No personal data is collected by this process.</li>
+          <li><strong>Crash Reports (Firebase Crashlytics):</strong> In release builds the App automatically sends crash reports to <strong>Firebase Crashlytics</strong> so we can find and fix bugs. A crash report contains the error and stack trace, device model, operating-system and app version, and a random installation identifier. It does not contain your production data, your account email or your documents, and it is not used for advertising or tracking.</li>
+          <li><strong>Map (OpenStreetMap):</strong> When you open the site map, map images are downloaded from OpenStreetMap's tile servers. As with any web request, your IP address and the requested map area are visible to the OpenStreetMap Foundation. The App does not access your device's GPS location; site coordinates are only stored if you pick them on the map.</li>
         </ul>
 
         <hr class="section-divider">
 
         <h2>3. Data Protection and Third-Party Sharing</h2>
         <ul>
-          <li><strong>No Analytics or Tracking:</strong> We do not use Google Analytics, Firebase Analytics, Crashlytics, or any third-party tracking or advertising SDK. We do not track your activity across apps or websites.</li>
+          <li><strong>No Analytics or Tracking:</strong> We do not use Google Analytics, Firebase Analytics, or any advertising SDK. Crash reports (see above) are used only to fix bugs. We do not track your activity across apps or websites.</li>
           <li><strong>No Data Selling:</strong> We do not sell, trade, rent, or share your personal data with any third parties for marketing or advertising purposes.</li>
-          <li><strong>Data Transfers:</strong> Your data remains on your local device and, if signed in, on Google Cloud Firestore (secured under your account). Data is only transferred externally when you explicitly: (a) use AI OCR with your own API key, (b) export a PDF/Excel report, or (c) share a backup file.</li>
+          <li><strong>Data Transfers:</strong> Your data remains on your local device and, if signed in, on Google Cloud Firestore (secured under your account). If you are a member of an organization, the data you enter for it is shared with its members. Apart from crash reports and map tiles described above, data is only transferred externally when you explicitly: (a) use AI OCR with your own API key, (b) export a PDF/Excel report, or (c) share a backup file.</li>
         </ul>
 
         <h3>Third-Party Services Used</h3>
         <p>The App integrates with the following third-party services, each governed by their own privacy policies:</p>
         <ul>
-          <li><strong>Google Firebase</strong> (Authentication, Cloud Firestore, App Check) — <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy Policy</a></li>
+          <li><strong>Google Firebase</strong> (Authentication, Cloud Firestore, App Check, Crashlytics) — <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy Policy</a></li>
+          <li><strong>OpenStreetMap</strong> (Map tiles) — <a href="https://osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">OSMF Privacy Policy</a></li>
           <li><strong>Google ML Kit</strong> (On-device text recognition) — processed locally, no data transmitted</li>
           <li><strong>Google Gemini API</strong> (Cloud AI OCR, if selected) — <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API Terms</a></li>
           <li><strong>OpenAI API</strong> (Cloud AI OCR, if selected) — <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">OpenAI Privacy Policy</a></li>
@@ -456,11 +461,12 @@
         <hr class="section-divider">
 
         <h2>4. User Data Deletion Instructions</h2>
-        <p>Since Synthesis stores your data locally on your mobile device, you have total control over your data deletion:</p>
+        <p>You can delete your data at any time, either from within the App or by contacting us:</p>
 
         <h3>A. In-App Deletion (Full Wipe)</h3>
         <ul>
           <li><strong>Account Deletion:</strong> You have the right to permanently delete your account directly from the App's Account Settings. Performing an account deletion triggers a <strong>Full Wipe</strong>, which securely and irreversibly erases all your data from both your local device (SQLite databases) and our Cloud servers (Firebase).</li>
+          <li><strong>Organization Data:</strong> Data you entered for an organization belongs to that organization and remains available to its other members after you delete your account; existing change-history entries keep the name or email of the member who made each change. To have an organization's data deleted, its owner can contact us by email (see below).</li>
           <li><strong>Clear App Cache/Data:</strong> Alternatively, you can clear app data via Android Device Settings → Apps → Synthesis → Storage → Clear Data. This will delete all local data, but it will not delete your Cloud account. To completely erase your presence, please use the in-app Account Deletion feature.</li>
         </ul>
 
@@ -477,7 +483,7 @@
         <ul>
           <li><strong>Encryption at Rest:</strong> Authentication tokens and API keys are stored using Android Encrypted Shared Preferences / KeyStore.</li>
           <li><strong>Encryption in Transit:</strong> All network communications use HTTPS/TLS exclusively. Cleartext HTTP traffic is blocked at the system level via Android Network Security Configuration.</li>
-          <li><strong>Access Control:</strong> Cloud Firestore security rules enforce strict per-user data isolation — users can only read and write their own data.</li>
+          <li><strong>Access Control:</strong> Cloud Firestore security rules enforce strict per-user data isolation — users can only read and write their own data, and organization data is accessible only to the organization's members.</li>
           <li><strong>App Integrity:</strong> Firebase App Check with Play Integrity validates that API requests originate from a genuine app installation.</li>
         </ul>
 
