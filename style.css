@@ -1602,3 +1602,18 @@ footer {
     transform: none;
   }
 }
+
+/* Migration steps (APK → Google Play) */
+.migrate-box ol {
+  margin: var(--space-sm) 0 var(--space-sm) var(--space-lg);
+}
+
+.migrate-box li {
+  margin-bottom: var(--space-xs);
+}
+
+.migrate-box a,
+.faq-answer a {
+  color: inherit;
+  text-decoration: underline;
+}

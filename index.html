@@ -42,11 +42,8 @@
       "price": "0",
       "priceCurrency": "EUR"
     },
-    "downloadUrl": [
-      "https://github.com/kwstas147/Synthesis-Distribution/raw/main/app-arm64-v8a-release.apk",
-      "https://github.com/kwstas147/Synthesis-Distribution/raw/main/app-armeabi-v7a-release.apk",
-      "https://github.com/kwstas147/Synthesis-Distribution/raw/main/app-x86_64-release.apk"
-    ]
+    "downloadUrl": "https://play.google.com/store/apps/details?id=com.synthesis",
+    "installUrl": "https://play.google.com/store/apps/details?id=com.synthesis"
   }
   </script>
   
@@ -162,43 +159,15 @@
       <p class="section-desc" data-i18n="download_desc">Για να εγκαταστήσετε την εφαρμογή στη συσκευή σας, κατεβάστε το κατάλληλο αρχείο από τις παρακάτω επιλογές.</p>
       
       <div class="cards-grid reveal-stagger">
-        <!-- ARM64 Card -->
-        <div class="card glass-panel">
+        <!-- Google Play Card -->
+        <div class="card glass-panel play-card">
           <div class="card-meta-chips">
-            <span class="meta-chip">64-bit v8a</span>
-            <span class="meta-chip">~26.2 MB</span>
-            <span class="meta-chip">Android 8.0 - 16+</span>
+            <span class="meta-chip">Google Play</span>
+            <span class="meta-chip" data-i18n="play_chip_updates">Αυτόματες ενημερώσεις</span>
           </div>
-          <h3 data-i18n="arch_arm64_title">📱 ARM64 (v8a)</h3>
-          <p data-i18n="arch_arm64_desc">Η πιο κοινή έκδοση, συμβατή με σχεδόν όλα τα σύγχρονα smartphone και tablet (τελευταίας 6ετίας).</p>
-          <a href="https://github.com/kwstas147/Synthesis-Distribution/raw/main/app-arm64-v8a-release.apk" class="primary-btn" data-i18n="download_btn">📥 Λήψη</a>
-          <button class="checksum-btn" data-checksum="f42a19b8823ce97e3a9910d65bce5926ec09cf83818e329e46a782b6bca358b1" data-i18n="sha_copy">SHA-256 Checksum</button>
-        </div>
-        
-        <!-- ARMv7 Card -->
-        <div class="card glass-panel">
-          <div class="card-meta-chips">
-            <span class="meta-chip">32-bit v7a</span>
-            <span class="meta-chip">~24.7 MB</span>
-            <span class="meta-chip">Legacy Support</span>
-          </div>
-          <h3 data-i18n="arch_arm_title">📱 ARM (v7a)</h3>
-          <p data-i18n="arch_arm_desc">Συμβατή με παλαιότερες συσκευές Android (32-bit).</p>
-          <a href="https://github.com/kwstas147/Synthesis-Distribution/raw/main/app-armeabi-v7a-release.apk" class="primary-btn" data-i18n="download_btn">📥 Λήψη</a>
-          <button class="checksum-btn" data-checksum="8c12a79d924bb789e900c31e78bf5511dc10ab3524b0f96e49a888c30d92298a" data-i18n="sha_copy">SHA-256 Checksum</button>
-        </div>
-
-        <!-- x86_64 Card -->
-        <div class="card glass-panel">
-          <div class="card-meta-chips">
-            <span class="meta-chip">x86_64</span>
-            <span class="meta-chip">~26.7 MB</span>
-            <span class="meta-chip">ChromeOS / PC</span>
-          </div>
-          <h3 data-i18n="arch_x86_title">💻 x86_64</h3>
-          <p data-i18n="arch_x86_desc">Ιδανική για Android Emulators και συσκευές/Chromebooks με επεξεργαστές x86.</p>
-          <a href="https://github.com/kwstas147/Synthesis-Distribution/raw/main/app-x86_64-release.apk" class="primary-btn" data-i18n="download_btn">📥 Λήψη</a>
-          <button class="checksum-btn" data-checksum="d3b5c6e87a24128f9103e67c80ef4612bc450098df2400a12e8461ab728e5a7b" data-i18n="sha_copy">SHA-256 Checksum</button>
+          <h3 data-i18n="play_title">▶️ Android — Google Play</h3>
+          <p data-i18n="play_desc">Η επίσημη έκδοση για κινητά και tablet Android. Εγκαθίσταται και ενημερώνεται αυτόματα από το Google Play, χωρίς ρυθμίσεις για «άγνωστες πηγές».</p>
+          <a href="https://play.google.com/store/apps/details?id=com.synthesis" class="primary-btn" target="_blank" rel="noopener" data-i18n="play_btn">📥 Λήψη από το Google Play</a>
         </div>
 
         <!-- iOS Card -->
@@ -214,8 +183,16 @@
         </div>
       </div>
       
-      <div class="alert-box" data-i18n="warning">
-        ⚠️ Σημείωση: Κατά την εγκατάσταση, ίσως χρειαστεί να επιτρέψετε την "Εγκατάσταση από άγνωστες πηγές" στις ρυθμίσεις ασφαλείας.
+      <div class="alert-box migrate-box" id="migrate" data-i18n="migrate_note">
+        <strong>⚠️ Έχετε εγκαταστήσει την εφαρμογή από αρχείο APK αυτής της σελίδας;</strong>
+        Η έκδοση του Google Play δεν μπορεί να ενημερώσει την παλιά εγκατάσταση. Χρειάζεται μία φορά μεταφορά, ώστε να μη χαθούν τα δεδομένα σας:
+        <ol>
+          <li>Στην εφαρμογή: <b>Ρυθμίσεις → Δεδομένα &amp; Αντίγραφα → Εξαγωγή Βάσης (Backup)</b> και αποθηκεύστε το αρχείο εκτός συσκευής (π.χ. Google Drive ή email).</li>
+          <li>Απεγκαταστήστε την παλιά εφαρμογή.</li>
+          <li>Εγκαταστήστε το Synthesis από το Google Play.</li>
+          <li><b>Ρυθμίσεις → Επαναφορά (Restore)</b> και επιλέξτε το αρχείο backup.</li>
+        </ol>
+        Αν χρησιμοποιείτε λογαριασμό με Cloud, μπορείτε εναλλακτικά να κάνετε «Αποθήκευση Δεδομένων στο Cloud» πριν την απεγκατάσταση και «Επαναφορά Δεδομένων από το Cloud» μετά τη σύνδεση. Τα δεδομένα εταιρείας (οργανισμού) συγχρονίζονται αυτόματα. Τα νέα αρχεία APK δεν θα ενημερώνονται πλέον.
       </div>
     </section>
 
@@ -390,11 +367,11 @@
         <!-- Q1 -->
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
-            <span data-i18n="faq_1_q">Πώς μπορώ να εγκαταστήσω το αρχείο APK στο Android;</span>
+            <span data-i18n="faq_1_q">Πώς εγκαθιστώ την εφαρμογή στο Android;</span>
             <span class="faq-chevron" aria-hidden="true">›</span>
           </button>
           <div class="faq-answer">
-            <p data-i18n="faq_1_a">Αφού κατεβάσετε το APK για την αρχιτεκτονική της συσκευής σας (συνήθως ARM64), ανοίξτε το αρχείο. Εάν σας ζητηθεί, επιτρέψτε την εγκατάσταση από αυτήν την πηγή στις ρυθμίσεις ασφαλείας του Android. Η εφαρμογή είναι πλήρως συμβατή με Android 8.0 έως Android 16.</p>
+            <p data-i18n="faq_1_a">Εγκαταστήστε το Synthesis από το <a href="https://play.google.com/store/apps/details?id=com.synthesis" target="_blank" rel="noopener">Google Play</a>. Οι ενημερώσεις γίνονται αυτόματα. Αν έχετε ήδη την εφαρμογή από αρχείο APK, ακολουθήστε πρώτα τα <a href="#migrate">βήματα μεταφοράς</a> για να κρατήσετε τα δεδομένα σας.</p>
           </div>
         </div>
 
