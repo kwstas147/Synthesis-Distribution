@@ -26,6 +26,19 @@ Synthesis is available exclusively on the Google Play Store.
   <sub>Σαρώστε με το κινητό σας / Scan with your phone</sub>
 </p>
 
+### 🔄 Είχατε εγκαταστήσει το APK; / Installed the APK?
+
+Η έκδοση APK δεν λαμβάνει πλέον ενημερώσεις. Για να περάσετε στο Google Play χωρίς απώλεια δεδομένων:
+
+1. **Backup:** Ρυθμίσεις → ΔΕΔΟΜΕΝΑ & ΑΝΤΙΓΡΑΦΑ → Εξαγωγή Βάσης (Backup). Σημειώστε τον 8ψήφιο Κωδικό Backup και αποθηκεύστε το αρχείο εκτός συσκευής (Google Drive, email).
+2. **Απεγκατάσταση** της έκδοσης APK.
+3. **Εγκατάσταση** από το [Google Play](https://play.google.com/store/apps/details?id=com.synthesis).
+4. **Επαναφορά:** Ρυθμίσεις → ΔΕΔΟΜΕΝΑ & ΑΝΤΙΓΡΑΦΑ → Επαναφορά (Restore), επιλογή αρχείου και κωδικός. Με λογαριασμό: Επαναφορά Δεδομένων από το Cloud.
+
+The APK version no longer receives updates. Back up (Settings → DATA & BACKUPS → Export Backup, keep the 8-digit Backup Code), uninstall the APK, install from Google Play, then restore (Settings → DATA & BACKUPS → Restore Backup, or Restore Data from Cloud if you had an account).
+
+📖 **Αναλυτικός οδηγός / Full guide:** [Μετάβαση από APK στο Google Play](https://kwstas147.github.io/Synthesis-Distribution/migration.html)
+
 ---
 
 ## 🇬🇷 Ελληνικά

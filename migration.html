@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Synthesis — Μετάβαση από APK στο Google Play</title>
+  <meta name="description" content="Οδηγός μετάβασης από την έκδοση APK στην έκδοση Google Play του Synthesis, με βήματα backup και επαναφοράς δεδομένων.">
+  <link rel="canonical" href="https://kwstas147.github.io/Synthesis-Distribution/migration.html">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link" data-i18n="skip_link">Μετάβαση στο περιεχόμενο</a>
+
+  <!-- Ambient Cursor Glow & Noise -->
+  <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- Aurora Mesh Background -->
+  <div class="aurora-bg" aria-hidden="true">
+    <div class="aurora-orb"></div>
+    <div class="aurora-orb"></div>
+    <div class="aurora-orb"></div>
+    <div class="aurora-orb"></div>
+  </div>
+
+  <!-- Floating Particles -->
+  <div class="particles-container" id="particles" aria-hidden="true"></div>
+
+  <nav class="cupertino-nav" aria-label="Κεντρική Πλοήγηση">
+    <div class="nav-content">
+      <div class="logo-area">
+        <a href="index.html" class="brand-link" style="text-decoration:none; color:inherit;">
+          <strong>Synthesis</strong>
+        </a>
+      </div>
+      <div class="nav-controls">
+        <button id="theme-toggle" class="icon-btn" aria-label="Εναλλαγή θέματος εμφάνισης (Σκοτεινό/Φωτεινό)">
+          <span class="icon-moon">🌙</span>
+          <span class="icon-sun" style="display:none;">☀️</span>
+        </button>
+        <button id="lang-toggle" class="text-btn" aria-label="Change Language">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container" id="main-content">
+    <div class="legal-page-header">
+      <a href="index.html" class="back-btn" aria-label="Επιστροφή στην αρχική σελίδα">
+        <span>‹</span> <span data-i18n="back_btn">Πίσω</span>
+      </a>
+      <h1 data-i18n="migrate_title" style="margin: 0; font-size: 24px;">🔄 Μετάβαση από APK στο Google Play</h1>
+    </div>
+    
+    <div class="glass-panel" style="padding: 30px;">
+      <div class="legal-content guide-content" data-i18n="migrate_full">
+        <p class="guide-lead">Αν είχατε εγκαταστήσει το Synthesis από αρχείο APK, η έκδοσή σας <b>δεν θα λαμβάνει πλέον ενημερώσεις</b>. Με τα παρακάτω βήματα περνάτε στην επίσημη έκδοση του Google Play χωρίς να χάσετε δεδομένα. Χρειάζονται περίπου 5 λεπτά.</p><div class="guide-note guide-note--warn">⚠️ <b>Σημαντικό:</b> Η απεγκατάσταση διαγράφει όλα τα δεδομένα της εφαρμογής από τη συσκευή. Μην απεγκαταστήσετε την έκδοση APK πριν ολοκληρώσετε το Βήμα 1.</div><h3>Βήμα 1 — Backup στην τωρινή (APK) έκδοση</h3><ol><li>Ανοίξτε το Synthesis και πηγαίνετε <b>Ρυθμίσεις → ΔΕΔΟΜΕΝΑ &amp; ΑΝΤΙΓΡΑΦΑ → Εξαγωγή Βάσης (Backup)</b>.</li><li>Αν εμφανιστεί <b>Κωδικός Backup</b> 8 ψηφίων, σημειώστε τον κάπου ασφαλές (σε χαρτί ή σε password manager). Ο κωδικός δεν αποθηκεύεται πουθενά: χωρίς αυτόν το backup δεν ανοίγει.</li><li>Από το μενού κοινοποίησης, αποθηκεύστε το αρχείο <b>εκτός της συσκευής</b>: στο Google Drive, σε email προς τον εαυτό σας ή σε υπολογιστή. Το αρχείο λέγεται <code>synthesis_backup_….sbackup</code>.</li><li>Ελέγξτε ότι το αρχείο υπάρχει εκεί που το αποθηκεύσατε, πριν συνεχίσετε.</li></ol><div class="guide-note">ℹ️ Σε παλαιότερες εκδόσεις δεν εμφανίζεται κωδικός και το αρχείο είναι <code>….db</code> <b>χωρίς κρυπτογράφηση</b>: όποιος το αποκτήσει μπορεί να δει τα δεδομένα σας. Φυλάξτε το προσεκτικά και διαγράψτε το μετά την επαναφορά.</div><p><b>Είστε συνδεδεμένοι με λογαριασμό Synthesis;</b> Για ένα δεύτερο αντίγραφο, πατήστε επιπλέον <b>Ρυθμίσεις → Λογαριασμός → Διαχείριση Λογαριασμού → Αποθήκευση Δεδομένων στο Cloud</b>. Κρατήστε πάντως και το αρχείο του Βήματος 1.</p><h3>Βήμα 2 — Απεγκατάσταση της έκδοσης APK</h3><ol><li>Πηγαίνετε <b>Ρυθμίσεις Android → Εφαρμογές → Synthesis → Απεγκατάσταση</b> (ή πατήστε παρατεταμένα το εικονίδιο και επιλέξτε Απεγκατάσταση).</li></ol><p>Η έκδοση του Google Play μπορεί να έχει διαφορετική ψηφιακή υπογραφή από το APK, οπότε το Android δεν την εγκαθιστά «από πάνω». Με την απεγκατάσταση αποφεύγετε το σφάλμα «Η εφαρμογή δεν εγκαταστάθηκε».</p><h3>Βήμα 3 — Εγκατάσταση από το Google Play</h3><ol><li>Ανοίξτε το <a href="https://play.google.com/store/apps/details?id=com.synthesis" target="_blank" rel="noopener">Synthesis στο Google Play</a> (ή σαρώστε το QR code στην <a href="index.html#downloads">αρχική σελίδα</a>) και πατήστε <b>Εγκατάσταση</b>.</li><li>Ανοίξτε την εφαρμογή, αλλά <b>μην καταχωρίσετε ακόμα νέα δεδομένα</b>: η επαναφορά από αρχείο αντικαθιστά ό,τι υπάρχει στη συσκευή.</li></ol><h3>Βήμα 4 — Επαναφορά (Restore)</h3><p><b>Α. Από το αρχείο backup</b></p><ol><li>Κατεβάστε στη συσκευή το αρχείο του Βήματος 1 (π.χ. από το Google Drive ή το email).</li><li>Πηγαίνετε <b>Ρυθμίσεις → ΔΕΔΟΜΕΝΑ &amp; ΑΝΤΙΓΡΑΦΑ → Επαναφορά (Restore)</b> και πατήστε <b>Επαναφορά</b> στην προειδοποίηση.</li><li>Επιλέξτε το αρχείο <code>.sbackup</code> (ή το παλιό <code>.db</code>).</li><li>Για αρχείο <code>.sbackup</code>, πληκτρολογήστε τον 8ψήφιο Κωδικό Backup. Μετά από 3 λάθη η επαναφορά κλειδώνει για 30 λεπτά.</li><li>Μόλις εμφανιστεί το μήνυμα επιτυχίας, κλείστε και ανοίξτε ξανά την εφαρμογή.</li></ol><p><b>Β. Από το Cloud (αν είχατε λογαριασμό)</b></p><ol><li>Πηγαίνετε <b>Ρυθμίσεις → Λογαριασμός → Διαχείριση Λογαριασμού → Σύνδεση / Δημιουργία Λογαριασμού</b> και συνδεθείτε με τον <b>ίδιο</b> λογαριασμό (email ή Google).</li><li>Βεβαιωθείτε ότι το <b>Cloud / Offline Mode</b> είναι σε <b>Online</b>.</li><li>Πατήστε <b>Επαναφορά Δεδομένων από το Cloud</b>. Τα δεδομένα του Cloud συγχωνεύονται με όσα υπάρχουν ήδη στη συσκευή.</li></ol><h3>Βήμα 5 — Τελικός έλεγχος</h3><ul><li>Ελέγξτε ότι εμφανίζονται οι αναφορές, οι συνθέσεις και οι δεξαμενές σας.</li><li>Το <b>κλειδί API του παρόχου AI</b> δεν περιλαμβάνεται στο backup για λόγους ασφαλείας: εισαγάγετέ το ξανά στις Ρυθμίσεις. Ελέγξτε επίσης κλείδωμα με βιομετρικά, γλώσσα, θέμα και υπενθυμίσεις.</li><li>Όταν βεβαιωθείτε ότι όλα είναι εντάξει, διαγράψτε το αρχείο backup από το Drive ή το email σας.</li><li>Από εδώ και πέρα οι ενημερώσεις έρχονται αυτόματα από το Google Play. Μην εγκαθιστάτε αρχεία APK του Synthesis από άλλες πηγές.</li></ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p data-i18n="footer">Developed with 💻 Clean Architecture & Production-Ready Standards.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

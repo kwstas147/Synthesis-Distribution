@@ -1425,6 +1425,76 @@ h2 {
   margin-bottom: var(--space-sm);
 }
 
+/* — APK → Google Play migration — */
+.migrate-callout {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  background: rgba(0, 113, 227, 0.08);
+  border: 1px solid rgba(0, 113, 227, 0.22);
+  border-radius: var(--radius-md);
+  padding: var(--space-md) var(--space-lg);
+  margin-bottom: var(--space-2xl);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--sys-text);
+}
+
+.migrate-callout p {
+  margin: 0;
+}
+
+.migrate-callout a,
+.faq-answer a,
+.guide-content a {
+  color: var(--sys-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.migrate-callout a:hover,
+.faq-answer a:hover,
+.guide-content a:hover {
+  text-decoration: underline;
+}
+
+.legal-content ol {
+  margin-left: var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+
+.legal-content ol li {
+  padding-left: 4px;
+}
+
+.guide-content .guide-lead {
+  font-size: 16px;
+}
+
+.guide-content code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  padding: 1px 6px;
+  border-radius: 6px;
+  background: var(--sys-hover);
+  border: 1px solid var(--sys-border);
+  word-break: break-all;
+}
+
+.guide-note {
+  background: rgba(0, 113, 227, 0.08);
+  border: 1px solid rgba(0, 113, 227, 0.22);
+  border-radius: var(--radius-md);
+  padding: var(--space-md) var(--space-lg);
+  margin: var(--space-md) 0;
+  font-size: 14.5px;
+}
+
+.guide-note--warn {
+  background: rgba(255, 149, 0, 0.1);
+  border-color: rgba(255, 149, 0, 0.3);
+}
+
 /* — Footer — */
 footer {
   position: relative;
