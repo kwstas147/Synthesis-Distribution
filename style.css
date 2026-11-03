@@ -719,6 +719,75 @@ h2 {
   line-height: 1.6;
 }
 
+/* Google Play Card + QR */
+.cards-grid.cards-grid--store {
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+}
+
+.play-card {
+  flex-direction: row;
+  align-items: stretch;
+  gap: var(--space-lg);
+}
+
+.play-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.qr-box {
+  margin: 0;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+
+/* QR stays black-on-white in both themes so cameras can read it */
+.qr-link {
+  display: block;
+  line-height: 0;
+  background: #fff;
+  padding: 8px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--sys-border);
+  box-shadow: 0 4px 16px var(--sys-shadow);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.qr-link:hover {
+  transform: scale(1.03);
+}
+
+.qr-link img {
+  display: block;
+  width: 132px;
+  height: 132px;
+}
+
+.qr-box figcaption {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--sys-text-secondary);
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .cards-grid.cards-grid--store {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .play-card {
+    flex-direction: column;
+  }
+}
+
 /* iOS Card Special Style */
 .ios-card {
   border: 1px solid rgba(52, 199, 89, 0.25);
@@ -837,25 +906,6 @@ h2 {
   font-size: 14px;
   cursor: default;
   border: 1px solid var(--sys-border);
-}
-
-/* Checksum button */
-.checksum-btn {
-  background: none;
-  border: none;
-  font-size: 11.5px;
-  color: var(--sys-primary);
-  cursor: pointer;
-  text-align: center;
-  margin-top: var(--space-sm);
-  padding: 4px;
-  transition: opacity 0.2s;
-  display: inline-block;
-}
-
-.checksum-btn:hover {
-  text-decoration: underline;
-  opacity: 0.85;
 }
 
 /* Warning Alert */

@@ -10,7 +10,7 @@ const translations = {
     "subtitle": "iOS Cupertino Style • Multi-Language • Production-Ready Mobile Application",
     "hero_badge": "Synthesis v1.0.0 • Android 16 Ready & Apple iOS In Development",
     "hero_desc": "Synthesis is a professional mobile application designed specifically for asphalt plants and production facilities. It fully digitizes production recording through Artificial Intelligence, extracting data from physical reports instantly. Experience a stable, premium UI with offline support and advanced statistical analysis.",
-    "hero_cta_download": "📥 Download APK",
+    "hero_cta_download": "📥 Download App",
     "hero_cta_simulator": "⚡ Try Live Simulator",
     "nav_downloads": "Download",
     "nav_simulator": "Simulator",
@@ -21,22 +21,17 @@ const translations = {
     "stat_langs_lbl": "Global Languages",
     "stat_offline_lbl": "Offline-First SQLite",
     "stat_ai_lbl": "AI OCR Speed",
-    "download_title": "📦 Download APK",
-    "download_desc": "To install the application on your device, download the appropriate file from the options below.",
-    "arch_arm64_title": "📱 ARM64 (v8a)",
-    "arch_arm64_desc": "The most common version, compatible with almost all modern smartphones and tablets (last 6 years).",
-    "arch_arm_title": "📱 ARM (v7a)",
-    "arch_arm_desc": "Compatible with older Android devices (32-bit).",
-    "arch_x86_title": "💻 x86_64",
-    "arch_x86_desc": "Ideal for Android Emulators and devices/Chromebooks with x86 processors.",
+    "download_title": "📦 Download App",
+    "download_desc": "Get Synthesis on Google Play, or scan the QR code with your phone's camera.",
+    "play_title": "▶️ Google Play Store",
+    "play_desc": "Install the official release from Google Play, with automatic updates and Google Play Protect security checks.",
+    "play_btn": "📲 Get it on Google Play",
+    "qr_caption": "Scan with your phone",
+    "qr_alt": "QR code linking to Synthesis on Google Play",
     "arch_ios_title": "🍏 Apple iOS",
     "arch_ios_desc": "The version for iPhone & iPad is in active development featuring 100% native Cupertino design, Face ID, and Apple Silicon optimization.",
     "ios_badge": "🚀 In Development",
     "ios_status_btn": "⏳ Coming Soon to App Store",
-    "download_btn": "📥 Download",
-    "sha_copy": "SHA-256 Checksum",
-    "sha_copied": "Copied to clipboard!",
-    "warning": "⚠️ Note: During installation, you may need to allow \"Install from unknown sources\" in your Android security settings.",
     "sim_title": "🧮 Live Asphalt Plant & Tank Simulator",
     "sim_subtitle": "Experience Synthesis computational intelligence directly in your browser:",
     "sim_target_label": "Asphalt Production Target:",
@@ -71,8 +66,8 @@ const translations = {
     "feat_12_title": "☁️ Cloud Sync & Auto-Backup",
     "feat_12_desc": "Seamless real-time bidirectional synchronization with Firebase Firestore, strict per-user security rules, and instant cloud restore.",
     "faq_title": "💬 Frequently Asked Questions (FAQ)",
-    "faq_1_q": "How do I install the APK file on Android?",
-    "faq_1_a": "After downloading the APK for your device architecture (usually ARM64), tap to open the file. If prompted, enable installation from unknown sources in Android Security Settings. Synthesis is 100% optimized for Android 8.0 through Android 16.",
+    "faq_1_q": "How do I install the app on Android?",
+    "faq_1_a": "Open the Synthesis page on Google Play (or scan the QR code with your phone) and tap “Install”. Updates are delivered automatically through Google Play. Synthesis supports Android 8.0 through Android 16.",
     "faq_2_q": "Does the application operate without internet access (Offline)?",
     "faq_2_a": "Yes, absolutely. Synthesis operates on a strict Offline-First architecture. All reports, materials, formulas, and history are kept locally in an encrypted SQLite database. Cloud sync and AI OCR are strictly optional.",
     "faq_3_q": "When will the Apple iOS (iPhone & iPad) edition launch?",
@@ -91,7 +86,7 @@ const translations = {
     "legal_1_full": "<h3>Disclaimer of Liability</h3><p>The <b>Synthesis</b> application is provided \"as is\" and \"as available\" without any express or implied warranty of any kind, including but not limited to warranties of merchantability, non-infringement, or fitness for a particular purpose.</p><p>The creators and developers of the application assume absolutely no liability for any data loss, technical failures, service interruptions, financial damages, or any direct/indirect damage arising from the use of the application in a production environment.</p><h3>Accuracy of Artificial Intelligence (AI)</h3><p>The use of Artificial Intelligence (AI) models for extracting data from physical production reports is experimental and may sometimes produce inaccurate results or misinterpret data. Users bear the sole responsibility to review, verify, and confirm the accuracy of all extracted data (including quantities, materials, and mixture compositions) before finally saving them to the local database.</p><h3>No Professional Advice</h3><p>The theoretical calculations, statistical analyses, and compliance alerts (SPC deviations) provided by the App are intended for informational and internal management purposes only. They do not constitute certified engineering, legal, or professional advice. Final production decisions must always be validated by qualified personnel.</p>",
     "legal_2_full": "<h3>Privacy Policy & GDPR Compliance</h3><p>Effective Date: September 2026</p><p>We deeply respect your privacy (Privacy by Design) and are fully compliant with personal data protection regulations.</p><h3>1. Account & Cloud Synchronization</h3><p>Your user profile and basic authentication data (e.g., email, secure tokens) are managed and synchronized securely via our Cloud services (Google Firebase). This allows you to securely back up your identity and preferences.</p><h3>2. 100% Offline Mode</h3><p>Synthesis is built with an Offline-First architecture. You have the option to enable <b>100% Offline Mode</b> from the application settings. When enabled, the App completely severs all communication with external servers. Any feature requiring internet access (such as AI OCR scanning) will be safely disabled, ensuring absolute local privacy.</p><h3>3. Full Data Deletion (Full Wipe)</h3><p>You have total control over your data. You have the right to request or automatically execute a <b>Full Wipe</b> of your account directly from within the App's Account Settings. Performing this action will irreversibly erase every piece of your data from both your local device (SQLite databases) and our Cloud servers.</p><h3>4. Local Data Storage</h3><p>Production data, reports, and statistics are stored locally on your device using an encrypted SQLite database.</p><h3>5. Use of AI Services (Gemini, OpenAI, Claude)</h3><p>The production report digitization feature (AI OCR) operates under a Bring Your Own Key (BYOK) model. Photographs of production sheets that you explicitly choose to scan are sent encrypted (via secure HTTPS/TLS) directly from your device to the official APIs of the selected AI providers strictly for the purpose of production data extraction.</p><p>The App does not retain or upload your photos to its own servers. At the AI provider level, processing and any temporary retention (e.g., up to 30 days strictly for security and abuse monitoring purposes by OpenAI and Anthropic) are governed by the official Terms of Service and settings of the account you maintain with each provider. Note that for Google Gemini, exclusion from public model training is guaranteed when using an account with an active billing tier (Paid/Tiered API).</p><h3>6. Biometric Authentication</h3><p>App locking mechanisms (FaceID / TouchID / PIN) are executed exclusively at the operating system level of your device. Synthesis does not collect, process, or have access to your biometric data.</p>",
     "legal_3_full": "<h3>Cookie Policy</h3><p>This website is a static distribution page hosted and provided via <b>GitHub Pages</b>.</p><h3>Tracking & Analytics</h3><p>Our website is completely static. We <b>do not use</b> tracking cookies, Google Analytics, tracking pixels, or any other user profiling mechanisms. We do not share any browsing data with third parties for advertising or marketing purposes.</p><h3>Essential Hosting Cookies</h3><p>Because this site is hosted on GitHub Pages, GitHub (as the hosting provider) may utilize certain <i>strictly necessary cookies</i> (essential cookies) required for the secure, fast, and proper functioning of their infrastructure (e.g., protection against DDoS attacks, Load Balancing, and network routing). By browsing this website, you accept this core technical functionality.</p><h3>Local Storage</h3><p>We use your browser's Local Storage solely to remember your UI preferences, specifically:<ul><li>Your preferred language (Greek or English).</li><li>Your preferred visual theme (Light or Dark mode).</li></ul>These preferences remain on your device and are never transmitted to our servers.</p>",
-    "legal_4_full": "<h3>Copyright & Terms of Use</h3><p><b>© 2024-2026 Synthesis. All rights reserved.</b></p><h3>Intellectual Property</h3><p>The entire codebase, application design, system architecture, User Interface (UI), User Experience (UX) flows, and the Synthesis logo are the exclusive intellectual property of the creators and developers.</p><h3>Prohibited Actions</h3><p>It is strictly prohibited to engage in any of the following activities without prior explicit written permission from the creators:<ul><li>Unauthorized reproduction, copying, or distribution of the application (APK/AAB files) outside of this official repository.</li><li>Reverse engineering, decompiling, or disassembling the application's source code or compiled binaries.</li><li>Commercial exploitation, resale, or sublicensing of the software.</li><li>Modification or creation of derivative works based on the Synthesis application.</li></ul></p><h3>Trademarks</h3><p>All third-party trademarks (such as Google Gemini, OpenAI, Anthropic Claude, Apple, Android) mentioned within the application or this website are the property of their respective owners.</p>",
+    "legal_4_full": "<h3>Copyright & Terms of Use</h3><p><b>© 2024-2026 Synthesis. All rights reserved.</b></p><h3>Intellectual Property</h3><p>The entire codebase, application design, system architecture, User Interface (UI), User Experience (UX) flows, and the Synthesis logo are the exclusive intellectual property of the creators and developers.</p><h3>Prohibited Actions</h3><p>It is strictly prohibited to engage in any of the following activities without prior explicit written permission from the creators:<ul><li>Unauthorized reproduction, copying, or distribution of the application (APK/AAB files) outside of its official Google Play Store listing.</li><li>Reverse engineering, decompiling, or disassembling the application's source code or compiled binaries.</li><li>Commercial exploitation, resale, or sublicensing of the software.</li><li>Modification or creation of derivative works based on the Synthesis application.</li></ul></p><h3>Trademarks</h3><p>All third-party trademarks (such as Google Gemini, OpenAI, Anthropic Claude, Apple, Android) mentioned within the application or this website are the property of their respective owners.</p>",
     "back_btn": "Back",
     "footer": "Developed with 💻 Clean Architecture & Production-Ready Standards."
   },
@@ -113,21 +108,16 @@ const translations = {
     "stat_offline_lbl": "Offline-First SQLite",
     "stat_ai_lbl": "Ταχύτητα AI OCR",
     "download_title": "📦 Λήψη Εφαρμογής",
-    "download_desc": "Για να εγκαταστήσετε την εφαρμογή στη συσκευή σας, κατεβάστε το κατάλληλο αρχείο από τις παρακάτω επιλογές.",
-    "arch_arm64_title": "📱 ARM64 (v8a)",
-    "arch_arm64_desc": "Η πιο κοινή έκδοση, συμβατή με σχεδόν όλα τα σύγχρονα smartphone και tablet (τελευταίας 6ετίας).",
-    "arch_arm_title": "📱 ARM (v7a)",
-    "arch_arm_desc": "Συμβατή με παλαιότερες συσκευές Android (32-bit).",
-    "arch_x86_title": "💻 x86_64",
-    "arch_x86_desc": "Ιδανική για Android Emulators και συσκευές/Chromebooks με επεξεργαστές x86.",
+    "download_desc": "Κατεβάστε το Synthesis από το Google Play ή σαρώστε το QR code με την κάμερα του κινητού σας.",
+    "play_title": "▶️ Google Play Store",
+    "play_desc": "Εγκαταστήστε την επίσημη έκδοση από το Google Play, με αυτόματες ενημερώσεις και έλεγχο ασφαλείας Google Play Protect.",
+    "play_btn": "📲 Λήψη από Google Play",
+    "qr_caption": "Σαρώστε με το κινητό σας",
+    "qr_alt": "QR code για τη σελίδα του Synthesis στο Google Play",
     "arch_ios_title": "🍏 Apple iOS",
     "arch_ios_desc": "Η έκδοση για iPhone & iPad βρίσκεται σε ενεργό ανάπτυξη με 100% native Cupertino design, Face ID και Apple Silicon βελτιστοποίηση.",
     "ios_badge": "🚀 Σε Εξέλιξη",
     "ios_status_btn": "⏳ Σύντομα στο App Store",
-    "download_btn": "📥 Λήψη",
-    "sha_copy": "SHA-256 Checksum",
-    "sha_copied": "Αντιγράφηκε στο πρόχειρο!",
-    "warning": "⚠️ Σημείωση: Κατά την εγκατάσταση, ίσως χρειαστεί να επιτρέψετε την \"Εγκατάσταση από άγνωστες πηγές\" στις ρυθμίσεις ασφαλείας.",
     "sim_title": "🧮 Live Προσομοιωτής Παραγωγής & Δεξαμενών",
     "sim_subtitle": "Δοκιμάστε τη λογική των υπολογισμών του Synthesis σε πραγματικό χρόνο:",
     "sim_target_label": "Στόχος Παραγωγής Ασφαλτομίγματος:",
@@ -162,8 +152,8 @@ const translations = {
     "feat_12_title": "☁️ Cloud Sync & Αυτόματο Backup",
     "feat_12_desc": "Ασφαλής αμφίδρομος συγχρονισμός σε Firebase Firestore, προστασία ανά χρήστη με αυστηρούς κανόνες ασφαλείας και άμεση επαναφορά δεδομένων.",
     "faq_title": "💬 Συχνές Ερωτήσεις (FAQ)",
-    "faq_1_q": "Πώς μπορώ να εγκαταστήσω το αρχείο APK στο Android;",
-    "faq_1_a": "Αφού κατεβάσετε το APK για την αρχιτεκτονική της συσκευής σας (συνήθως ARM64), ανοίξτε το αρχείο. Εάν σας ζητηθεί, επιτρέψτε την εγκατάσταση από αυτήν την πηγή στις ρυθμίσεις ασφαλείας του Android. Η εφαρμογή είναι πλήρως συμβατή με Android 8.0 έως Android 16.",
+    "faq_1_q": "Πώς μπορώ να εγκαταστήσω την εφαρμογή στο Android;",
+    "faq_1_a": "Ανοίξτε τη σελίδα του Synthesis στο Google Play (ή σαρώστε το QR code με το κινητό σας) και πατήστε «Εγκατάσταση». Οι ενημερώσεις γίνονται αυτόματα μέσω του Google Play. Η εφαρμογή είναι συμβατή με Android 8.0 έως Android 16.",
     "faq_2_q": "Λειτουργεί η εφαρμογή χωρίς σύνδεση στο διαδίκτυο (Offline);",
     "faq_2_a": "Απολύτως. Το Synthesis είναι κατασκευασμένο με αρχιτεκτονική Offline-First. Όλα τα δεδομένα, δελτία, δεξαμενές και στατιστικά αποθηκεύονται τοπικά σε κρυπτογραφημένη βάση SQLite. Η μόνη προαιρετική λειτουργία που απαιτεί διαδίκτυο είναι η σάρωση δελτίων μέσω AI OCR (αν επιθυμείτε) και ο προαιρετικός συγχρονισμός Cloud.",
     "faq_3_q": "Πότε θα κυκλοφορήσει η έκδοση για iPhone & iPad (Apple iOS);",
@@ -182,7 +172,7 @@ const translations = {
     "legal_1_full": "<h3>Αποποίηση Ευθύνης</h3><p>Η εφαρμογή <b>Synthesis</b> παρέχεται \"ως έχει\" (as is) και \"ως διατίθεται\" (as available) χωρίς καμία ρητή ή σιωπηρή εγγύηση, συμπεριλαμβανομένων ενδεικτικά των εγγυήσεων εμπορευσιμότητας, μη παραβίασης δικαιωμάτων ή καταλληλότητας για συγκεκριμένο σκοπό.</p><p>Οι δημιουργοί και προγραμματιστές της εφαρμογής δεν φέρουν απολύτως καμία ευθύνη για τυχόν απώλεια δεδομένων, τεχνικές αστοχίες, διακοπές λειτουργίας, οικονομικές ζημίες ή οποιαδήποτε άμεση/έμμεση ζημία προκύψει από τη χρήση της εφαρμογής σε περιβάλλον παραγωγής.</p><h3>Ακρίβεια Τεχνητής Νοημοσύνης (AI)</h3><p>Η χρήση μοντέλων Τεχνητής Νοημοσύνης (AI) για την εξαγωγή δεδομένων από φυσικά δελτία παραγωγής είναι πειραματική και ενδέχεται ορισμένες φορές να παράγει ανακριβή αποτελέσματα ή να παρερμηνεύσει δεδομένα. Οι χρήστες φέρουν την αποκλειστική ευθύνη να ελέγχουν, να επαληθεύουν και να επιβεβαιώνουν την ορθότητα όλων των δεδομένων (συμπεριλαμβανομένων ποσοτήτων, υλικών και συνθέσεων) πριν την τελική αποθήκευσή τους στην τοπική βάση.</p><h3>Καμία Επαγγελματική Συμβουλή</h3><p>Οι θεωρητικοί υπολογισμοί, οι στατιστικές αναλύσεις και οι ειδοποιήσεις συμμόρφωσης (αποκλίσεις SPC) που παρέχει η Εφαρμογή προορίζονται αποκλειστικά για ενημερωτικούς σκοπούς και εσωτερική διαχείριση. Δεν αποτελούν πιστοποιημένη μηχανική, νομική ή επαγγελματική συμβουλή. Οι τελικές αποφάσεις παραγωγής πρέπει πάντα να επικυρώνονται από εξειδικευμένο προσωπικό.</p>",
     "legal_2_full": "<h3>Πολιτική Απορρήτου & Προστασία Δεδομένων (GDPR)</h3><p>Ημερομηνία Έναρξης Ισχύος: Σεπτέμβριος 2026</p><p>Σεβόμαστε απόλυτα το απόρρητό σας (Privacy by Design) και εναρμονιζόμαστε πλήρως με τους κανόνες προστασίας προσωπικών δεδομένων.</p><h3>1. Λογαριασμός & Συγχρονισμός Cloud</h3><p>Το προφίλ χρήστη σας και τα βασικά δεδομένα ταυτοποίησης (π.χ. email, ασφαλή tokens) διαχειρίζονται και συγχρονίζονται με ασφάλεια μέσω των Cloud υπηρεσιών μας (Google Firebase). Αυτό σας επιτρέπει να διατηρείτε ασφαλές αντίγραφο ασφαλείας της ταυτότητάς σας και των προτιμήσεών σας.</p><h3>2. 100% Offline Λειτουργία</h3><p>Το Synthesis έχει σχεδιαστεί με αρχιτεκτονική Offline-First. Έχετε τη δυνατότητα να ενεργοποιήσετε την <b>100% Offline Λειτουργία</b> από τις ρυθμίσεις της εφαρμογής. Όταν είναι ενεργοποιημένη, η Εφαρμογή διακόπτει πλήρως κάθε επικοινωνία με εξωτερικούς διακομιστές. Οποιαδήποτε δυνατότητα απαιτεί πρόσβαση στο διαδίκτυο (όπως η σάρωση AI OCR) θα απενεργοποιηθεί με ασφάλεια, διασφαλίζοντας απόλυτη τοπική ιδιωτικότητα.</p><h3>3. Ολική Διαγραφή Δεδομένων (Full Wipe)</h3><p>Έχετε τον απόλυτο έλεγχο των δεδομένων σας. Έχετε το δικαίωμα να ζητήσετε ή να εκτελέσετε αυτόματα μια <b>Ολική Διαγραφή (Full Wipe)</b> του λογαριασμού σας απευθείας μέσα από τις Ρυθμίσεις Λογαριασμού της Εφαρμογής. Η εκτέλεση αυτής της ενέργειας θα διαγράψει αμετάκλητα κάθε ίχνος των δεδομένων σας τόσο από την τοπική συσκευή (βάσεις SQLite) όσο και από τους Cloud servers μας.</p><h3>4. Τοπική Αποθήκευση Δεδομένων</h3><p>Τα δεδομένα παραγωγής, οι αναφορές και τα στατιστικά αποθηκεύονται τοπικά στη συσκευή σας χρησιμοποιώντας μια κρυπτογραφημένη βάση δεδομένων SQLite.</p><h3>5. Χρήση Υπηρεσιών AI (Gemini, OpenAI, Claude)</h3><p>Η λειτουργία ψηφιοποίησης δελτίων παραγωγής (AI OCR) βασίζεται στο μοντέλο χρήσης προσωπικού κλειδιού πρόσβασης (Bring Your Own Key - BYOK). Οι φωτογραφίες των δελτίων παραγωγής που επιλέγετε ρητά να σαρώσετε αποστέλλονται κρυπτογραφημένες (μέσω ασφαλούς πρωτοκόλλου HTTPS/TLS) απευθείας από τη συσκευή σας στα επίσημα APIs των επιλεγμένων παρόχων AI, αυστηρά και μόνο για την εξαγωγή των δεδομένων παραγωγής.</p><p>Η Εφαρμογή δεν διατηρεί ούτε μεταφορτώνει τις φωτογραφίες σας σε δικούς της διακομιστές. Στο επίπεδο των παρόχων AI, η επεξεργασία και η τυχόν προσωρινή διατήρηση των δεδομένων (π.χ. έως 30 ημέρες αποκλειστικά για λόγους ασφαλείας και πρόληψης κατάχρησης από την OpenAI και την Anthropic) υπόκεινται στους επίσημους Όρους Χρήσης και τις ρυθμίσεις του λογαριασμού που διατηρείτε στον εκάστοτε πάροχο. Σημειώνεται ότι για το Google Gemini, η μη χρήση των δεδομένων σας για τη βελτίωση των δημόσιων μοντέλων διασφαλίζεται εφόσον χρησιμοποιείτε λογαριασμό με ενεργοποιημένη βαθμίδα χρέωσης (Paid/Tiered API).</p><h3>6. Βιομετρική Αυθεντικοποίηση</h3><p>Οι μηχανισμοί κλειδώματος της εφαρμογής (FaceID / TouchID / PIN) εκτελούνται αποκλειστικά στο επίπεδο του λειτουργικού συστήματος της συσκευής σας. Το Synthesis δεν συλλέγει, δεν επεξεργάζεται και δεν έχει πρόσβαση στα βιομετρικά σας δεδομένα.</p>",
     "legal_3_full": "<h3>Πολιτική Cookies</h3><p>Αυτός ο ιστότοπος είναι μια στατική σελίδα διανομής που φιλοξενείται και παρέχεται μέσω της πλατφόρμας <b>GitHub Pages</b>.</p><h3>Παρακολούθηση & Analytics</h3><p>Ο ιστότοπός μας είναι εντελώς στατικός. <b>Δεν χρησιμοποιούμε</b> cookies παρακολούθησης (tracking cookies), Google Analytics, tracking pixels, ή οποιουσδήποτε άλλους μηχανισμούς δημιουργίας προφίλ χρηστών. Δεν μοιραζόμαστε καθόλου δεδομένα περιήγησης με τρίτους για διαφημιστικούς σκοπούς ή σκοπούς μάρκετινγκ.</p><h3>Απαραίτητα Cookies Φιλοξενίας</h3><p>Επειδή αυτός ο ιστότοπος φιλοξενείται στο GitHub Pages, το GitHub (ως πάροχος φιλοξενίας) ενδέχεται να χρησιμοποιεί ορισμένα <i>απολύτως απαραίτητα cookies</i> (essential cookies) που απαιτούνται για την ασφαλή, γρήγορη και ορθή λειτουργία της υποδομής τους (π.χ. προστασία από επιθέσεις DDoS, Εξισορρόπηση Φορτίου και δρομολόγηση δικτύου). Με την περιήγησή σας σε αυτόν τον ιστότοπο, αποδέχεστε αυτή τη βασική τεχνική λειτουργικότητα.</p><h3>Τοπική Αποθήκευση (Local Storage)</h3><p>Χρησιμοποιούμε την Τοπική Αποθήκευση (Local Storage) του προγράμματος περιήγησής σας αποκλειστικά για να θυμόμαστε τις προτιμήσεις διεπαφής χρήστη (UI), συγκεκριμένα:<ul><li>Την προτιμώμενη γλώσσα σας (Ελληνικά ή Αγγλικά).</li><li>Το προτιμώμενο οπτικό θέμα (Light ή Dark mode).</li></ul>Αυτές οι προτιμήσεις παραμένουν στη συσκευή σας και δεν μεταδίδονται ποτέ στους διακομιστές μας.</p>",
-    "legal_4_full": "<h3>Πνευματικά Δικαιώματα & Όροι Χρήσης</h3><p><b>© 2024-2026 Synthesis. Με την επιφύλαξη παντός δικαιώματος.</b></p><h3>Πνευματική Ιδιοκτησία</h3><p>Το σύνολο του κώδικα, ο σχεδιασμός της εφαρμογής, η αρχιτεκτονική του συστήματος, η Διεπαφή Χρήστη (UI), οι ροές Εμπειρίας Χρήστη (UX) και το λογότυπο του Synthesis αποτελούν αποκλειστική πνευματική ιδιοκτησία των δημιουργών και προγραμματιστών.</p><h3>Απαγορευμένες Ενέργειες</h3><p>Απαγορεύεται αυστηρά η συμμετοχή σε οποιαδήποτε από τις ακόλουθες δραστηριότητες χωρίς προηγούμενη ρητή γραπτή άδεια από τους δημιουργούς:<ul><li>Μη εξουσιοδοτημένη αναπαραγωγή, αντιγραφή ή διανομή της εφαρμογής (αρχεία APK/AAB) εκτός αυτού του επίσημου αποθετηρίου.</li><li>Αποσυμπίληση (reverse engineering), αποσυναρμολόγηση (disassembling) ή εξαγωγή του πηγαίου κώδικα ή των μεταγλωττισμένων αρχείων (binaries) της εφαρμογής.</li><li>Εμπορική εκμετάλλευση, μεταπώληση ή υποαδειοδότηση του λογισμικού.</li><li>Τροποποίηση ή δημιουργία παράγωγων έργων βασισμένων στην εφαρμογή Synthesis.</li></ul></p><h3>Εμπορικά Σήματα</h3><p>Όλα τα εμπορικά σήματα τρίτων (όπως Google Gemini, OpenAI, Anthropic Claude, Apple, Android) που αναφέρονται στην εφαρμογή ή σε αυτόν τον ιστότοπο αποτελούν ιδιοκτησία των αντίστοιχων ιδιοκτητών τους.</p>",
+    "legal_4_full": "<h3>Πνευματικά Δικαιώματα & Όροι Χρήσης</h3><p><b>© 2024-2026 Synthesis. Με την επιφύλαξη παντός δικαιώματος.</b></p><h3>Πνευματική Ιδιοκτησία</h3><p>Το σύνολο του κώδικα, ο σχεδιασμός της εφαρμογής, η αρχιτεκτονική του συστήματος, η Διεπαφή Χρήστη (UI), οι ροές Εμπειρίας Χρήστη (UX) και το λογότυπο του Synthesis αποτελούν αποκλειστική πνευματική ιδιοκτησία των δημιουργών και προγραμματιστών.</p><h3>Απαγορευμένες Ενέργειες</h3><p>Απαγορεύεται αυστηρά η συμμετοχή σε οποιαδήποτε από τις ακόλουθες δραστηριότητες χωρίς προηγούμενη ρητή γραπτή άδεια από τους δημιουργούς:<ul><li>Μη εξουσιοδοτημένη αναπαραγωγή, αντιγραφή ή διανομή της εφαρμογής (αρχεία APK/AAB) εκτός της επίσημης σελίδας της στο Google Play Store.</li><li>Αποσυμπίληση (reverse engineering), αποσυναρμολόγηση (disassembling) ή εξαγωγή του πηγαίου κώδικα ή των μεταγλωττισμένων αρχείων (binaries) της εφαρμογής.</li><li>Εμπορική εκμετάλλευση, μεταπώληση ή υποαδειοδότηση του λογισμικού.</li><li>Τροποποίηση ή δημιουργία παράγωγων έργων βασισμένων στην εφαρμογή Synthesis.</li></ul></p><h3>Εμπορικά Σήματα</h3><p>Όλα τα εμπορικά σήματα τρίτων (όπως Google Gemini, OpenAI, Anthropic Claude, Apple, Android) που αναφέρονται στην εφαρμογή ή σε αυτόν τον ιστότοπο αποτελούν ιδιοκτησία των αντίστοιχων ιδιοκτητών τους.</p>",
     "back_btn": "Πίσω",
     "footer": "Developed with 💻 Clean Architecture & Production-Ready Standards."
   }
@@ -414,7 +404,9 @@ function initPlantSimulator() {
     metricBitumen.textContent = `${bitumenTons.toFixed(1)} tn`;
     metricAggregates.textContent = `${aggregatesTons.toFixed(1)} tn`;
     metricFuel.textContent = `${fuelLiters.toLocaleString()} Lt`;
-    metricTime.textContent = currentLang === 'el' ? `~${timeSavedHours} ώρες` : `~${timeSavedHours} hrs`;
+    if (metricTime) {
+      metricTime.textContent = currentLang === 'el' ? `~${timeSavedHours} ώρες` : `~${timeSavedHours} hrs`;
+    }
 
     /* Dynamic Tank visual level */
     const tankCapacity = 40; // 40 ton max capacity reference
@@ -466,31 +458,6 @@ function initFAQ() {
       /* Toggle current */
       item.classList.toggle('open', !isOpen);
       btn.setAttribute('aria-expanded', !isOpen ? 'true' : 'false');
-    });
-  });
-}
-
-/* =====================================================
-   SHA-256 Checksum Copier
-   ===================================================== */
-function initChecksumCopier() {
-  const buttons = document.querySelectorAll('.checksum-btn');
-  if (!buttons.length) return;
-
-  buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const checksum = btn.getAttribute('data-checksum');
-      if (navigator.clipboard && checksum) {
-        navigator.clipboard.writeText(checksum).then(() => {
-          const originalText = btn.textContent;
-          btn.textContent = translations[currentLang]["sha_copied"];
-          btn.style.color = '#34C759';
-          setTimeout(() => {
-            btn.textContent = originalText;
-            btn.style.color = '';
-          }, 2000);
-        });
-      }
     });
   });
 }
@@ -578,6 +545,13 @@ function updateLanguage() {
     }
   });
 
+  document.querySelectorAll('[data-i18n-alt]').forEach(el => {
+    const key = el.getAttribute('data-i18n-alt');
+    if (translations[currentLang] && translations[currentLang][key]) {
+      el.setAttribute('alt', translations[currentLang][key]);
+    }
+  });
+
   /* Recalculate simulator if present */
   const rangeInput = document.getElementById('sim-range');
   if (rangeInput) {
@@ -621,8 +595,6 @@ function init() {
   /* FAQ Accordion */
   initFAQ();
 
-  /* Checksum Copier */
-  initChecksumCopier();
   
   /* Nav Scroll Blur */
   initNavScrollEffect();

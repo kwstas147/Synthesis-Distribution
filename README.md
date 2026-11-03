@@ -10,17 +10,21 @@
 
 ---
 
-## 📦 Λήψη Εφαρμογής / Download APK
+## 📦 Λήψη Εφαρμογής / Download
 
-Για να εγκαταστήσετε την εφαρμογή στη συσκευή σας, κατεβάστε το κατάλληλο αρχείο από τον παρακάτω πίνακα.
+Το Synthesis διατίθεται αποκλειστικά μέσω του Google Play Store.
+Synthesis is available exclusively on the Google Play Store.
 
-| Έκδοση (Architecture) | Σύνδεσμος Λήψης (Download Link) | Περιγραφή |
-| :--- | :--- | :--- |
-| 📱 **ARM64 (v8a)** | [**📥 Λήψη (Download)**](https://github.com/kwstas147/Synthesis-Distribution/raw/main/app-arm64-v8a-release.apk) | Η πιο κοινή έκδοση, συμβατή με σχεδόν όλα τα σύγχρονα smartphone και tablet (τελευταίας 6ετίας). |
-| 📱 **ARM (v7a)** | [**📥 Λήψη (Download)**](https://github.com/kwstas147/Synthesis-Distribution/raw/main/app-armeabi-v7a-release.apk) | Συμβατή με παλαιότερες συσκευές Android (32-bit). |
-| 💻 **x86_64** | [**📥 Λήψη (Download)**](https://github.com/kwstas147/Synthesis-Distribution/raw/main/app-x86_64-release.apk) | Ιδανική για Android Emulators και συσκευές/Chromebooks με επεξεργαστές x86. |
+<p align="center">
+  <a href="https://play.google.com/store/apps/details?id=com.synthesis">
+    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" height="80" alt="Get it on Google Play" />
+  </a>
+</p>
 
-> ⚠️ *Σημείωση: Κατά την εγκατάσταση, ίσως χρειαστεί να επιτρέψετε την "Εγκατάσταση από άγνωστες πηγές" στις ρυθμίσεις ασφαλείας της Android συσκευής σας.*
+<p align="center">
+  <img src="play-qr.svg" width="160" height="160" alt="QR code για το Synthesis στο Google Play / QR code to Synthesis on Google Play" /><br/>
+  <sub>Σαρώστε με το κινητό σας / Scan with your phone</sub>
+</p>
 
 ---
 
